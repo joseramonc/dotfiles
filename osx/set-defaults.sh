@@ -13,18 +13,37 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 # Use AirDrop over every interface. srsly this should be a default.
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 
-# Always open everything in Finder's list view. This is important.
+### Finder
+
+# Empty the trash securely by default
+defaults write com.apple.finder EmptyTrashSecurely -bool true
+
+
+# Always open everything in Finder's column view. This is important for joseramonc
 defaults write com.apple.Finder FXPreferredViewStyle clmv
 
-# Show the ~/Library folder.
-chflags nohidden ~/Library
-
-# Set a really fast key repeat.
-defaults write NSGlobalDomain KeyRepeat -int 0
+# When performing a search, search the current folder by default
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
 # Set the Finder prefs for showing a few different volumes on the Desktop.
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+
+
+# Show the ~/Library folder.
+chflags nohidden ~/Library
+
+# Show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Set a really fast key repeat.
+defaults write NSGlobalDomain KeyRepeat -int 0
+
+# Disable auto-correct
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# Automatic hide and show the dock
+defaults write com.apple.dock autohide -bool true
 
 # Run the screensaver if we're in the bottom-left hot corner.
 defaults write com.apple.dock wvous-bl-corner -int 5
@@ -32,6 +51,9 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 
 # Hide Safari's bookmark bar.
 defaults write com.apple.Safari ShowFavoritesBar -bool false
+
+# Show full website address in Safari.
+defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
 
 # Set up Safari for development.
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true

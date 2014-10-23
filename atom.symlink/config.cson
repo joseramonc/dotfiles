@@ -11,6 +11,7 @@
       'autosave'
       'exception-reporting'
       'metrics'
+      'emmet'
     ]
     'ignoredNames': [
       '.bundle'
