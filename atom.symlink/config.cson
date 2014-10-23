@@ -7,14 +7,24 @@
   'core':
     'disabledPackages': [
       'go-to-line'
+      'background-tips'
       'autosave'
       'exception-reporting'
       'metrics'
+    ]
+    'ignoredNames': [
+      '.bundle'
+      '.git'
+      'log'
+      'repositories'
+      'tmp'
+      'vendor'
     ]
     'themes': [
       'atom-dark-ui'
       'solarized-dark-syntax'
     ]
+    'hideGitIgnoredFiles': true
     'useReactEditor': true
   'spell-check':
     'grammars': [
@@ -29,9 +39,7 @@
       'text.plain'
       'text.plain.null-grammar'
     ]
-  'tabs-to-spaces': {}
   'welcome':
     'showOnStartup': false
   'release-notes':
     'viewedVersion': '0.95.0'
-  'tabs': {}
