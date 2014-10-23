@@ -11,7 +11,7 @@
       'autosave'
       'exception-reporting'
       'metrics'
-      'emmet'
+      'language-ruby-on-rails'
     ]
     'ignoredNames': [
       '.bundle'
@@ -44,3 +44,13 @@
     'showOnStartup': false
   'release-notes':
     'viewedVersion': '0.95.0'
+'.js.rails.source source.jquery.js':
+  'editor': {}
+'.rails.rjs.ruby.source':
+  'editor': {}
+'.rails.ruby.source':
+  'editor': {}
+'.html.ruby.text':
+  'editor': {}
+'.ruby.source.sql':
+  'editor': {}
