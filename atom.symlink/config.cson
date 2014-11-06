@@ -42,6 +42,8 @@
     'showOnStartup': false
   'release-notes':
     'viewedVersion': '0.95.0'
+  'tree-view':
+    'hideVcsIgnoredFiles': true
 '.js.rails.source source.jquery.js':
   'editor': {}
 '.rails.rjs.ruby.source':
