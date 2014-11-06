@@ -3,7 +3,6 @@
     'fontFamily': 'Menlo'
     'fontSize': 15
     'showIndentGuide': true
-    'invisibles': {}
   'core':
     'disabledPackages': [
       'go-to-line'
@@ -19,7 +18,6 @@
       'log'
       'repositories'
       'tmp'
-      'vendor'
     ]
     'themes': [
       'atom-dark-ui'
