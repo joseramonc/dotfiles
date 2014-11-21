@@ -15,6 +15,7 @@ if (( ${+terminfo[smkx]} )) && (( ${+terminfo[rmkx]} )); then
   zle -N zle-line-finish
 fi
 
+#enable smart autocomplete when pressing up and down
 autoload -Uz up-line-or-beginning-search # <3
 autoload -Uz down-line-or-beginning-search # <3
 zle -N up-line-or-beginning-search # <3
@@ -39,17 +40,15 @@ if [[ "${terminfo[kcud1]}" != "" ]]; then
   bindkey "${terminfo[kcud1]}" down-line-or-beginning-search    # start typing + [Down-Arrow] - fuzzy find history backward
 fi
 
-if [[ "${terminfo[khome]}" != "" ]]; then
-  bindkey "${terminfo[khome]}" beginning-of-line      # [Home] - Go to beginning of line
-fi
-if [[ "${terminfo[kend]}" != "" ]]; then
-  bindkey "${terminfo[kend]}"  end-of-line            # [End] - Go to end of line
-fi
-
 bindkey ' ' magic-space                               # [Space] - do history expansion
 
 bindkey '^[[1;5C' forward-word                        # [Alt-RightArrow] - move forward one word
 bindkey '^[[1;5D' backward-word                       # [Alt-LeftArrow] - move backward one word
+
+# Skip to start/end of line with cmd-arrow, text-editors default on osx
+#since @joseramonc iTerm is configure to send those commandns with [Cmd-LeftArrow] and [Cmd-RightArrow]
+bindkey '[[1;0D' beginning-of-line                    # [Cmd-LeftArrow] - Go to beggining of line
+bindkey '[[1;1D' end-of-line                          # [Cmd-RightArrow] - Go to beggining of line
 
 if [[ "${terminfo[kcbt]}" != "" ]]; then
   bindkey "${terminfo[kcbt]}" reverse-menu-complete   # [Shift-Tab] - move through the completion menu backwards
@@ -71,8 +70,8 @@ bindkey '\C-x\C-e' edit-command-line
 
 # consider emacs keybindings:
 
-#bindkey -e  ## emacs key bindings
-#
+bindkey -e  ## emacs key bindings
+
 bindkey '^[[A' up-line-or-search
 bindkey '^[[B' down-line-or-search
 bindkey '^[^[[C' emacs-forward-word
