@@ -5,7 +5,6 @@
     'showIndentGuide': true
     'autoIndentOnPaste': false
     'invisibles': {}
-    'autoIndent': false
   'core':
     'disabledPackages': [
       'go-to-line'
