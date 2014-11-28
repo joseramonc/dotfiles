@@ -1,0 +1,2 @@
+'body':
+  'cmd-o v': 'rails-transporter:open-view'
