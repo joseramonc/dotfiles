@@ -13,6 +13,9 @@
       'exception-reporting'
       'metrics'
       'language-ruby-on-rails'
+      'bookmarks'
+      'timecop'
+      'spell-check'
     ]
     'ignoredNames': [
       '.bundle'
@@ -45,14 +48,16 @@
   'release-notes':
     'viewedVersion': '0.95.0'
   'tree-view':
-    'hideVcsIgnoredFiles': true
+    'hideIgnoredNames': true
+  'fuzzy-finder': {}
+  'tabs': {}
 '.js.rails.source source.jquery.js':
   'editor': {}
 '.rails.rjs.ruby.source':
   'editor': {}
-'.rails.ruby.source':
+'.ruby.source.sql':
   'editor': {}
 '.html.ruby.text':
   'editor': {}
-'.ruby.source.sql':
+'.rails.ruby.source':
   'editor': {}

@@ -1,2 +1,4 @@
 'body':
   'cmd-o v': 'rails-transporter:open-view'
+  
+  'ctrl-`': 'pane:show-previous-item'
