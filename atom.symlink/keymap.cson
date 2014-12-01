@@ -1,4 +1,8 @@
 'body':
   'cmd-o v': 'rails-transporter:open-view'
-  
+  'cmd-o c': 'rails-transporter:open-controller'
+  'cmd-o f': 'rails-transporter:open-view-finder'
+  'cmd-o m': 'rails-transporter:open-model'
+  'cmd-o h': 'rails-transporter:open-helper'
+
   'ctrl-`': 'pane:show-previous-item'
