@@ -4,5 +4,15 @@
   'cmd-o f': 'rails-transporter:open-view-finder'
   'cmd-o m': 'rails-transporter:open-model'
   'cmd-o h': 'rails-transporter:open-helper'
+  'cmd-o p': 'rails-transporter:open-partial-template'
+
+  # tree view
+  'cmd-i': 'tree-view:reveal-active-file'
 
   'ctrl-`': 'pane:show-previous-item'
+
+'atom-workspace atom-text-editor:not([mini])':
+  'cmd-j': 'unset!'
+  
+'.platform-darwin':
+  'cmd-j': 'fuzzy-finder:toggle-file-finder'
