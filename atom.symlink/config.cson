@@ -1,81 +1,78 @@
-'global':
-  'editor':
-    'fontFamily': 'Menlo'
-    'showIndentGuide': true
-    'autoIndentOnPaste': false
-    'fontSize': 15
-    'invisibles': {}
-  'core':
-    'disabledPackages': [
-      'background-tips'
-      'autosave'
-      'metrics'
-      'timecop'
-      'spell-check'
-      'welcome'
-      'markdown-preview'
-      'language-xml'
-      'language-toml'
-      'language-source'
-      'language-python'
-      'language-property-list'
-      'language-perl'
-      'language-mustache'
-      'language-make'
-      'language-java'
-      'language-go'
-      'language-gfm'
-      'language-clojure'
-      'language-c'
-      'exception-reporting'
-      'autoflow'
-      'emmet'
-      'keybinding-resolver'
+"*":
+  editor:
+    fontFamily: "Menlo"
+    fontSize: 15
+    showIndentGuide: true
+    autoIndentOnPaste: false
+    invisibles: {}
+  core:
+    ignoredNames: [
+      ".bundle"
+      ".git"
+      "log"
+      "repositories"
+      "tmp"
     ]
-    'ignoredNames': [
-      '.bundle'
-      '.git'
-      'log'
-      'repositories'
-      'tmp'
+    disabledPackages: [
+      "background-tips"
+      "autosave"
+      "metrics"
+      "timecop"
+      "spell-check"
+      "welcome"
+      "markdown-preview"
+      "language-xml"
+      "language-toml"
+      "language-source"
+      "language-python"
+      "language-property-list"
+      "language-perl"
+      "language-mustache"
+      "language-make"
+      "language-java"
+      "language-go"
+      "language-gfm"
+      "language-clojure"
+      "language-c"
+      "exception-reporting"
+      "autoflow"
+      "keybinding-resolver"
     ]
-    'hideGitIgnoredFiles': true
-    'useReactEditor': true
-    'themes': [
-      'atom-dark-ui'
-      'solarized-dark-syntax'
+    themes: [
+      "atom-dark-ui"
+      "solarized-dark-syntax"
     ]
-  'spell-check':
-    'grammars': [
-      'source.gfm'
-      'text.git-commit'
-      'text.plain'
+  "spell-check":
+    grammars: [
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
     ]
-  'markdown-preview':
-    'grammars': [
-      'source.gfm'
-      'source.litcoffee'
-      'text.plain'
-      'text.plain.null-grammar'
+  "markdown-preview":
+    grammars: [
+      "source.gfm"
+      "source.litcoffee"
+      "text.plain"
+      "text.plain.null-grammar"
     ]
-  'welcome':
-    'showOnStartup': false
-  'release-notes':
-    'viewedVersion': '0.95.0'
-  'tree-view':
-    'hideIgnoredNames': true
-    'showOnRightSide': true
-  'tabs-to-spaces':
-    'onSave': 'untabify'
-  'exception-reporting':
-    'userId': 'f6992024-6e66-279c-64e4-816ff0307646'
-'.js.rails.source source.jquery.js':
-  'editor': {}
-'.rails.rjs.ruby.source':
-  'editor': {}
-'.ruby.source.sql':
-  'editor': {}
-'.html.ruby.text':
-  'editor': {}
-'.rails.ruby.source':
-  'editor': {}
+  welcome:
+    showOnStartup: false
+  "release-notes":
+    viewedVersion: "0.95.0"
+  "tree-view":
+    hideIgnoredNames: true
+    showOnRightSide: true
+  "tabs-to-spaces":
+    onSave: "untabify"
+  "exception-reporting":
+    userId: "f6992024-6e66-279c-64e4-816ff0307646"
+".js.rails.source source.jquery.js":
+  editor: {}
+".rails.rjs.ruby.source":
+  editor: {}
+".ruby.source.sql":
+  editor: {}
+".html.ruby.text":
+  editor: {}
+".rails.ruby.source":
+  editor: {}

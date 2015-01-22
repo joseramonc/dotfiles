@@ -1,8 +1,11 @@
-# shortcut to this dotfiles path is $ZSH
+
 export ZSH=$HOME/.dotfiles
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+
+# textmate configuration
+export EDITOR="/usr/local/bin/mate -w"
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/src
