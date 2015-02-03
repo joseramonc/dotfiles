@@ -15,11 +15,16 @@
 'atom-workspace atom-text-editor:not([mini])':
   'cmd-j': 'unset!'
 
+
 '.platform-darwin':
   # toggle fuzzy finder
   'cmd-j': 'fuzzy-finder:toggle-file-finder'
   'cmd-o': 'fuzzy-finder:toggle-file-finder'
 
+'.platform-darwin atom-text-editor:not([mini])':
+  # select text inside brackets
+  'alt-d': 'bracket-matcher:select-inside-brackets'
+  
 '.tree-view':
   # reveal selected tree view file in finder
   'cmd-o': 'tree-view:show-in-file-manager'

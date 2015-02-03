@@ -36,7 +36,6 @@
       "language-c"
       "exception-reporting"
       "autoflow"
-      "keybinding-resolver"
     ]
     themes: [
       "atom-dark-ui"
@@ -66,13 +65,17 @@
     onSave: "untabify"
   "exception-reporting":
     userId: "f6992024-6e66-279c-64e4-816ff0307646"
+  "autocomplete-plus":
+    autoActivationDelay: 500
+    maxSuggestions: 5
+    confirmCompletion: "enter"
 ".js.rails.source source.jquery.js":
   editor: {}
 ".rails.rjs.ruby.source":
   editor: {}
-".ruby.source.sql":
+".rails.ruby.source":
   editor: {}
 ".html.ruby.text":
   editor: {}
-".rails.ruby.source":
+".ruby.source.sql":
   editor: {}
