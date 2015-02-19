@@ -1,8 +1,7 @@
-atom.symlink/.node-gyp
-atom.symlink/.storage
-atom.symlink/compile-cache/
-atom.symlink/packages
-atom.symlink/storage
-atom.symlink/themes
+atom.symlink/*
+!atom.symlink/atom.coffee
+!atom.symlink/config.cson
+!atom.symlink/init.coffee
+!atom.symlink/keymap.cson
 
 git/gitconfig.symlink
