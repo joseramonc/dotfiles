@@ -1,10 +1,9 @@
 "*":
   editor:
     fontFamily: "Menlo"
-    fontSize: 15
     showIndentGuide: true
-    autoIndentOnPaste: false
     invisibles: {}
+    fontSize: 15
   core:
     ignoredNames: [
       ".bundle"
@@ -36,6 +35,7 @@
       "language-c"
       "exception-reporting"
       "autoflow"
+      "language-objective-c"
     ]
     themes: [
       "atom-dark-ui"
@@ -69,13 +69,8 @@
     autoActivationDelay: 500
     maxSuggestions: 5
     confirmCompletion: "enter"
-".js.rails.source source.jquery.js":
-  editor: {}
-".rails.rjs.ruby.source":
-  editor: {}
-".rails.ruby.source":
-  editor: {}
-".html.ruby.text":
-  editor: {}
-".ruby.source.sql":
-  editor: {}
+    fileBlacklist: [
+      ".*"
+      "*.md"
+      "*.text"
+    ]
