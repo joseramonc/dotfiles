@@ -61,13 +61,11 @@
   "tree-view":
     hideIgnoredNames: true
     showOnRightSide: true
-  "tabs-to-spaces":
-    onSave: "untabify"
+  "tabs-to-spaces": {}
   "exception-reporting":
     userId: "f6992024-6e66-279c-64e4-816ff0307646"
   "autocomplete-plus":
     autoActivationDelay: 500
-    maxSuggestions: 5
     confirmCompletion: "enter"
     fileBlacklist: [
       ".*"

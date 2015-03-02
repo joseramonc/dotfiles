@@ -17,8 +17,6 @@
 # autocomplete both on $PROJECTS, and also assume you want to autocomplete on
 # your Go projects in $GOPATH/src.
 
-if [ ! -z "$1" ] && [ -s "$GOPATH/src/github.com/$1" ]; then
-  cd "$GOPATH/src/github.com/$1"
-else
-  cd "$PROJECTS/$1"
-fi
+c() { cd $PROJECTS/$1; }
+_c() { _files -W $PROJECTS -/; }
+compdef _c c
