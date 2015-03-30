@@ -12,11 +12,8 @@
 #    c holm<tab>/bo<tab>
 #
 # ...to quickly jump into holman/boom, for example.
-#
-# This also accounts for how Go structures its projects. For example, it will
-# autocomplete both on $PROJECTS, and also assume you want to autocomplete on
-# your Go projects in $GOPATH/src.
+
+compdef _c c
 
 c() { cd $PROJECTS/$1; }
 _c() { _files -W $PROJECTS -/; }
-compdef _c c
