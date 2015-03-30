@@ -1,11 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/joseramonc/.dotfiles'
-let g:netrw_dirhist_2='/Users/joseramonc/.vim'
-let g:netrw_dirhist_3='/Users/joseramonc/.dotfiles'
-let g:netrw_dirhist_4='/Users/joseramonc/.dotfiles/script'
-let g:netrw_dirhist_5='/Users/joseramonc/.dotfiles'
-let g:netrw_dirhist_6='/Users/joseramonc/.dotfiles/script'
-let g:netrw_dirhist_7='/Users/joseramonc/.dotfiles'
-let g:netrw_dirhist_8='/Users/joseramonc/src/adminpanel'
-let g:netrw_dirhist_9='/Users/joseramonc/.dotfiles'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/joseramonc/src/adminpanel/.git'
+let g:netrw_dirhist_2='/Users/joseramonc/src/adminpanel'
+let g:netrw_dirhist_3='/Users/joseramonc/src/adminpanel/.git'
+let g:netrw_dirhist_4='/Users/joseramonc/src/adminpanel'

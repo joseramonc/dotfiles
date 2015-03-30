@@ -2,6 +2,7 @@
   editor:
     fontFamily: "Menlo"
     showIndentGuide: true
+    autoIndentOnPaste: false
     invisibles: {}
     fontSize: 15
   core:
@@ -16,7 +17,6 @@
       "background-tips"
       "autosave"
       "metrics"
-      "timecop"
       "spell-check"
       "welcome"
       "markdown-preview"
@@ -35,7 +35,6 @@
       "language-c"
       "exception-reporting"
       "autoflow"
-      "language-objective-c"
     ]
     themes: [
       "atom-dark-ui"
@@ -61,15 +60,10 @@
   "tree-view":
     hideIgnoredNames: true
     showOnRightSide: true
-  "tabs-to-spaces": {}
+  "tabs-to-spaces":
+    onSave: "untabify"
   "exception-reporting":
     userId: "f6992024-6e66-279c-64e4-816ff0307646"
   "autocomplete-plus":
     autoActivationDelay: 500
     confirmCompletion: "enter"
-    fileBlacklist: [
-      ".*"
-      "*.md"
-      "*.text"
-    ]
-  emmet: {}

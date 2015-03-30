@@ -12,6 +12,8 @@
   # go to line prompt
   'cmd-m': 'go-to-line:toggle'
 
+  'shift-cmd-S': 'unset!'
+
 'atom-workspace atom-text-editor:not([mini])':
   'cmd-j': 'unset!'
 
