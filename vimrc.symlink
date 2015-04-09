@@ -3,6 +3,7 @@ execute pathogen#infect()
 syntax enable
 set background=dark
 colorscheme solarized
+highlight clear SignColumn
 
 if has("gui_macvim")
   macmenu &File.New\ Tab key=<nop>
@@ -18,3 +19,4 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
+let g:CommandTClearPrevWordMap = ['<A-Left>', '<C-w>']

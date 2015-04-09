@@ -1,21 +1,16 @@
 'body':
-  'cmd-u v': 'rails-transporter:open-view'
-  'cmd-u c': 'rails-transporter:open-controller'
-  'cmd-u f': 'rails-transporter:open-view-finder'
-  'cmd-u m': 'rails-transporter:open-model'
-  'cmd-u h': 'rails-transporter:open-helper'
-  'cmd-u p': 'rails-transporter:open-partial-template'
-
   # reveal current file in tree view
   'cmd-i': 'tree-view:reveal-active-file'
 
   # go to line prompt
   'cmd-m': 'go-to-line:toggle'
 
-  'shift-cmd-S': 'unset!'
+  'shift-cmd-S': 'core:save'
+
 
 'atom-workspace atom-text-editor:not([mini])':
   'cmd-j': 'unset!'
+
 
 '.platform-darwin':
   # toggle fuzzy finder
@@ -25,6 +20,9 @@
 '.platform-darwin atom-text-editor:not([mini])':
   # select text inside brackets
   'alt-d': 'bracket-matcher:select-inside-brackets'
+
+  # join lines
+  'shift-cmd-J': 'editor:join-lines'
 
 '.tree-view':
   # reveal selected tree view file in finder

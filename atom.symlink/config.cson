@@ -38,7 +38,7 @@
     ]
     themes: [
       "atom-dark-ui"
-      "solarized-dark-syntax"
+      "railscast-theme"
     ]
   "spell-check":
     grammars: [

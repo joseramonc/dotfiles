@@ -1,6 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/joseramonc/src/adminpanel/.git'
-let g:netrw_dirhist_2='/Users/joseramonc/src/adminpanel'
-let g:netrw_dirhist_3='/Users/joseramonc/src/adminpanel/.git'
-let g:netrw_dirhist_4='/Users/joseramonc/src/adminpanel'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/joseramonc/codn-boxen'
+let g:netrw_dirhist_2='/Users/joseramonc/codn-boxen/manifests'
+let g:netrw_dirhist_3='/Users/joseramonc/codn-boxen'
