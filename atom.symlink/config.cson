@@ -9,9 +9,7 @@
     ignoredNames: [
       ".bundle"
       ".git"
-      "log"
-      "repositories"
-      "tmp"
+      ".DS_Store"
     ]
     disabledPackages: [
       "background-tips"
@@ -40,6 +38,8 @@
       "atom-dark-ui"
       "railscast-theme"
     ]
+    excludeVcsIgnoredPaths: false
+    projectHome: "/Users/joseramonc/src/"
   "spell-check":
     grammars: [
       "source.gfm"
@@ -60,7 +60,7 @@
   "tree-view":
     hideIgnoredNames: true
     showOnRightSide: true
-    hideVcsIgnoredFiles: true
+    hideVcsIgnoredFiles: false
   "tabs-to-spaces":
     onSave: "untabify"
   "exception-reporting":
