@@ -12,7 +12,12 @@
   # go to line prompt
   'cmd-m': 'go-to-line:toggle'
 
-  'shift-cmd-S': 'unset!'
+  'cmd-shift-S': 'core:save'
+
+  'alt-j': 'editor:move-to-previous-word-boundary'
+  'alt-shift-j': 'editor:select-to-previous-word-boundary'
+  'alt-k': 'editor:move-to-next-word-boundary'
+  'alt-shift-k': 'editor:select-to-next-word-boundary'
 
 'atom-workspace atom-text-editor:not([mini])':
   'cmd-j': 'unset!'
