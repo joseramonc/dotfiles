@@ -12,9 +12,8 @@
 #    c holm<tab>/bo<tab>
 #
 # ...to quickly jump into holman/boom, for example.
-#
-# This also accounts for how Go structures its projects. For example, it will
-# autocomplete both on $PROJECTS
+
+compdef _c c
 
 c() { cd $PROJECTS/$1; }
 _c() { _files -W $PROJECTS -/; }
