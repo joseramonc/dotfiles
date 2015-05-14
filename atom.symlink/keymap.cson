@@ -7,6 +7,7 @@
 
   'cmd-shift-S': 'core:save'
 
+  'cmd-o': 'rails-transporter:open-view'
   'alt-j': 'editor:move-to-previous-word-boundary'
   'alt-shift-j': 'editor:select-to-previous-word-boundary'
   'alt-k': 'editor:move-to-next-word-boundary'
@@ -19,7 +20,6 @@
 '.platform-darwin':
   # toggle fuzzy finder
   'cmd-j': 'fuzzy-finder:toggle-file-finder'
-  'cmd-o': 'fuzzy-finder:toggle-file-finder'
 
 '.platform-darwin atom-text-editor:not([mini])':
   # select text inside brackets

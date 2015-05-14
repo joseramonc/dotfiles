@@ -36,9 +36,8 @@
     ]
     themes: [
       "atom-dark-ui"
-      "railscast-theme"
+      "solarized-dark-syntax"
     ]
-    excludeVcsIgnoredPaths: false
     projectHome: "/Users/joseramonc/src/"
   "spell-check":
     grammars: [
@@ -60,7 +59,6 @@
   "tree-view":
     hideIgnoredNames: true
     showOnRightSide: true
-    hideVcsIgnoredFiles: false
   "tabs-to-spaces":
     onSave: "untabify"
   "exception-reporting":
