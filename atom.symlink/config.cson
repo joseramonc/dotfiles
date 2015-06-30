@@ -2,7 +2,7 @@
   editor:
     fontFamily: "Menlo"
     showIndentGuide: true
-    autoIndentOnPaste: false
+    autoIndentOnPaste: true
     invisibles: {}
     fontSize: 15
   core:
@@ -33,6 +33,11 @@
       "language-c"
       "exception-reporting"
       "autoflow"
+      "link"
+      "timecop"
+      "bookmarks"
+      "language-csharp"
+      "language-objective-c"
     ]
     themes: [
       "atom-dark-ui"
@@ -54,8 +59,6 @@
     ]
   welcome:
     showOnStartup: false
-  "release-notes":
-    viewedVersion: "0.95.0"
   "tree-view":
     hideIgnoredNames: true
     showOnRightSide: true

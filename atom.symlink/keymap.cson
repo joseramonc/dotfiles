@@ -7,17 +7,22 @@
 
   'cmd-shift-S': 'core:save'
 
-  'cmd-o': 'rails-transporter:open-view'
   'alt-j': 'editor:move-to-previous-word-boundary'
-  'alt-shift-j': 'editor:select-to-previous-word-boundary'
   'alt-k': 'editor:move-to-next-word-boundary'
+  'alt-shift-j': 'editor:select-to-previous-word-boundary'
   'alt-shift-k': 'editor:select-to-next-word-boundary'
+
+  'cmd-o': 'rails-transporter:open-view'
 
 'atom-workspace atom-text-editor:not([mini])':
   'cmd-j': 'unset!'
 
 
 '.platform-darwin':
+  'cmd-p': 'rails-transporter:open-partial-template'
+  # overwrite comment keybinding
+  'cmd-.': 'editor:toggle-line-comments'
+
   # toggle fuzzy finder
   'cmd-j': 'fuzzy-finder:toggle-file-finder'
 
