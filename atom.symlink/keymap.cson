@@ -2,6 +2,7 @@
   # reveal current file in tree view
   'cmd-i': 'tree-view:reveal-active-file'
 
+
   # go to line prompt
   'cmd-m': 'go-to-line:toggle'
 
@@ -13,6 +14,9 @@
   'alt-shift-k': 'editor:select-to-next-word-boundary'
 
   'cmd-o': 'rails-transporter:open-view'
+
+  # remove horrible cmd-shift-o window prompt
+  'cmd-shift-o': 'unset!'
 
 'atom-workspace atom-text-editor:not([mini])':
   'cmd-j': 'unset!'
