@@ -15,9 +15,6 @@ defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 
 ### Finder
 
-# Empty the trash securely by default
-defaults write com.apple.finder EmptyTrashSecurely -bool true
-
 
 # Always open everything in Finder's column view. This is important for joseramonc
 defaults write com.apple.Finder FXPreferredViewStyle clmv
@@ -46,7 +43,7 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write com.apple.dock autohide -bool true
 
 # Run the screensaver if we're in the bottom-left hot corner.
-defaults write com.apple.dock wvous-bl-corner -int 5
+defaults write com.apple.dock wvous-bl-corner -int 0
 defaults write com.apple.dock wvous-bl-modifier -int 0
 
 # Hide Safari's bookmark bar.

@@ -40,10 +40,13 @@
       "language-objective-c"
     ]
     themes: [
-      "atom-dark-ui"
+      "nucleus-dark-ui"
       "solarized-dark-syntax"
     ]
-    projectHome: "/Users/joseramonc/src/"
+    projectHome: "/Users/joseramonc/src"
+    packagesWithKeymapsDisabled: [
+      "emmet"
+    ]
   "spell-check":
     grammars: [
       "source.gfm"
@@ -69,3 +72,11 @@
   "autocomplete-plus":
     autoActivationDelay: 500
     confirmCompletion: "enter"
+    backspaceTriggersAutocomplete: true
+  "rails-partials": {}
+  emmet: {}
+  "selector-to-tag":
+    activeForFileTypes: [
+      ".html"
+      ".erb"
+    ]

@@ -18,12 +18,22 @@
   # remove horrible cmd-shift-o window prompt
   'cmd-shift-o': 'unset!'
 
+  # Font size
+  'cmd-=': 'unset!'
+  'cmd-+': 'unset!'
+  'cmd--': 'unset!'
+  'cmd-_': 'unset!'
+
 'atom-workspace atom-text-editor:not([mini])':
   'cmd-j': 'unset!'
 
+  'cmd-shift-e': 'emmet:expand-abbreviation'
+
+  'alt-ctrl-d': 'emmet:balance-outward'
 
 '.platform-darwin':
   'cmd-p': 'rails-transporter:open-partial-template'
+
   # overwrite comment keybinding
   'cmd-.': 'editor:toggle-line-comments'
 
@@ -32,7 +42,14 @@
 
 '.platform-darwin atom-text-editor:not([mini])':
   # select text inside brackets
-  'alt-d': 'bracket-matcher:select-inside-brackets'
+  'alt-d': 'emmet:balance-inward'
+  'ctrl-d': 'emmet:balance-outward'
+  'alt-s': 'emmet:update-tag'
+  'alt-r': 'emmet:remove-tag'
+  'alt-j': 'emmet:go-to-matching-pair'
+  'alt-w': 'emmet:wrap-with-abbreviation'
+  'cmd-e': 'emmet:expand-abbreviation'
+
 
   # join lines
   'shift-cmd-J': 'editor:join-lines'
