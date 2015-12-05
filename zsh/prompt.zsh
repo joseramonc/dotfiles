@@ -1,14 +1,8 @@
-# ZSH_THEME="robbyrussell"
 autoload colors && colors
 # cheers, @ehrenmurdick
 # http://github.com/ehrenmurdick/config/blob/master/zsh/prompt.zsh
 
-if (( $+commands[git] ))
-then
-  git="$commands[git]"
-else
-  git="/usr/bin/git"
-fi
+git="$commands[git]"
 
 git_branch() {
   echo $($git symbolic-ref HEAD 2>/dev/null | awk -F/ {'print $NF'})
@@ -34,8 +28,8 @@ git_tag(){
 
 git_prompt_info () {
  ref=$($git symbolic-ref HEAD 2>/dev/null) || return
-# echo "(%{\e[0;33m%}${ref#refs/heads/}%{\e[0m%})"
- echo "${ref#refs/heads/}"
+ # echo "(%{\e[33m%}${ref#refs/heads/}%{\e[0m%})" #=> @(master)
+ echo "${ref#refs/heads/}" #=> @master
 }
 
 unpushed () {
@@ -52,24 +46,11 @@ need_push () {
 }
 
 ruby_version() {
-  if (( $+commands[rbenv] ))
-  then
-    echo "$(rbenv version | awk '{print $1}')"
-  fi
-
-  if (( $+commands[rvm-prompt] ))
-  then
-    echo "$(rvm-prompt | awk '{print $1}')"
-  fi
+  echo "$(rbenv version | awk '{print $1}')"
 }
 
 rb_prompt() {
-  if ! [[ -z "$(ruby_version)" ]]
-  then
-    echo "%{$fg_bold[yellow]%}$(ruby_version)%{$reset_color%}"
-  else
-    echo ""
-  fi
+  echo "%{$fg_bold[yellow]%}$(ruby_version)%{$reset_color%}"
 }
 
 directory_name() {
@@ -83,6 +64,5 @@ set_prompt () {
 }
 
 precmd() {
-  title "zsh" "%m" "%55<...<%~"
   set_prompt
 }

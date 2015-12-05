@@ -13,10 +13,7 @@ export PROJECTS=~/src
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
 # you'll have access to them in your scripts.
-if [[ -a ~/.localrc ]]
-then
-  source ~/.localrc
-fi
+source ~/.localrc
 
 # all of our zsh files
 typeset -U config_files
@@ -48,11 +45,6 @@ compdef _c c
 
 unset config_files
 
-# export ANDROID="/opt/boxen/homebrew/var/lib/android-sdk"
-# export MANPATH="/usr/local/man:$MANPATH"
-
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
-
-alias gulp="nocorrect gulp"

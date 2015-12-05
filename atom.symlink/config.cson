@@ -65,6 +65,7 @@
   "tree-view":
     hideIgnoredNames: true
     showOnRightSide: true
+    hideVcsIgnoredFiles: true
   "tabs-to-spaces":
     onSave: "untabify"
   "exception-reporting":

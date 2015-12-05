@@ -2,7 +2,6 @@
   # reveal current file in tree view
   'cmd-i': 'tree-view:reveal-active-file'
 
-
   # go to line prompt
   'cmd-m': 'go-to-line:toggle'
 
@@ -49,8 +48,10 @@
   'alt-j': 'emmet:go-to-matching-pair'
   'alt-w': 'emmet:wrap-with-abbreviation'
   'cmd-e': 'emmet:expand-abbreviation'
+  
+  'cmd-shift-r': 'script:run'
 
-
+  'cmd-i': 'tree-view:reveal-active-file'
   # join lines
   'shift-cmd-J': 'editor:join-lines'
 
