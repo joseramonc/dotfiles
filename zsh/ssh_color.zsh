@@ -7,9 +7,9 @@ if [[ -n "$ITERM_SESSION_ID" ]]; then
     echo -ne "\033]6;1;bg;green;brightness;$2\a"
     echo -ne "\033]6;1;bg;blue;brightness;$3\a"
   }
-  tab-red() { tab-color 255 0 0 }
-  tab-green() { tab-color 0 255 0 }
-  tab-blue() { tab-color 0 0 255 }
+  # tab-red() { tab-color 255 0 0 }
+  # tab-green() { tab-color 0 255 0 }
+  # tab-blue() { tab-color 0 0 255 }
   tab-reset() { echo -ne "\033]6;1;bg;*;default\a" }
 
   function iterm2_tab_precmd() {
