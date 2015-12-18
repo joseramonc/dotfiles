@@ -46,7 +46,9 @@
     projectHome: "/Users/joseramonc/src"
     packagesWithKeymapsDisabled: [
       "emmet"
+      "autocomplete-atom-api"
     ]
+    openEmptyEditorOnStart: false
   "spell-check":
     grammars: [
       "source.gfm"
@@ -65,7 +67,6 @@
   "tree-view":
     hideIgnoredNames: true
     showOnRightSide: true
-    hideVcsIgnoredFiles: true
   "tabs-to-spaces":
     onSave: "untabify"
   "exception-reporting":
