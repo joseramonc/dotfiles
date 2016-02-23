@@ -1,16 +1,10 @@
 "*":
-  editor:
-    fontFamily: "Menlo"
-    showIndentGuide: true
-    autoIndentOnPaste: true
-    invisibles: {}
-    fontSize: 15
+  "autocomplete-plus":
+    autoActivationDelay: 500
+    backspaceTriggersAutocomplete: true
+    confirmCompletion: "enter"
   core:
-    ignoredNames: [
-      ".bundle"
-      ".git"
-      ".DS_Store"
-    ]
+    closeEmptyWindows: false
     disabledPackages: [
       "background-tips"
       "autosave"
@@ -30,7 +24,6 @@
       "language-go"
       "language-gfm"
       "language-clojure"
-      "language-c"
       "exception-reporting"
       "autoflow"
       "link"
@@ -39,22 +32,30 @@
       "language-csharp"
       "language-objective-c"
     ]
-    themes: [
-      "nucleus-dark-ui"
-      "solarized-dark-syntax"
+    ignoredNames: [
+      ".bundle"
+      ".git"
+      ".DS_Store"
     ]
-    projectHome: "/Users/joseramonc/src"
+    openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
       "emmet"
       "autocomplete-atom-api"
     ]
-    openEmptyEditorOnStart: false
-  "spell-check":
-    grammars: [
-      "source.gfm"
-      "text.git-commit"
-      "text.plain"
+    projectHome: "/Users/joseramonc/src"
+    themes: [
+      "nucleus-dark-ui"
+      "solarized-dark-syntax"
     ]
+  editor:
+    autoIndentOnPaste: true
+    fontFamily: "Menlo"
+    fontSize: 15
+    invisibles: {}
+    showIndentGuide: true
+  emmet: {}
+  "exception-reporting":
+    userId: "f6992024-6e66-279c-64e4-816ff0307646"
   "markdown-preview":
     grammars: [
       "source.gfm"
@@ -62,23 +63,23 @@
       "text.plain"
       "text.plain.null-grammar"
     ]
-  welcome:
-    showOnStartup: false
-  "tree-view":
-    hideIgnoredNames: true
-    showOnRightSide: true
-  "tabs-to-spaces":
-    onSave: "untabify"
-  "exception-reporting":
-    userId: "f6992024-6e66-279c-64e4-816ff0307646"
-  "autocomplete-plus":
-    autoActivationDelay: 500
-    confirmCompletion: "enter"
-    backspaceTriggersAutocomplete: true
   "rails-partials": {}
-  emmet: {}
   "selector-to-tag":
     activeForFileTypes: [
       ".html"
       ".erb"
     ]
+  "spell-check":
+    grammars: [
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+    ]
+  "tabs-to-spaces":
+    onSave: "untabify"
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+    showOnRightSide: true
+  welcome:
+    showOnStartup: false

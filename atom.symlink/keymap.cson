@@ -23,6 +23,8 @@
   'cmd--': 'unset!'
   'cmd-_': 'unset!'
 
+  'cmd-alt-w': 'tabs:close-other-tabs'
+
 'atom-workspace atom-text-editor:not([mini])':
   'cmd-j': 'unset!'
 
@@ -48,7 +50,7 @@
   'alt-j': 'emmet:go-to-matching-pair'
   'alt-w': 'emmet:wrap-with-abbreviation'
   'cmd-e': 'emmet:expand-abbreviation'
-  
+
   'cmd-shift-r': 'script:run'
 
   'cmd-i': 'tree-view:reveal-active-file'
