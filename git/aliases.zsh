@@ -7,6 +7,7 @@ then
 fi
 
 # The rest of my fun git aliases
+compdef g='git'
 alias gl='git pull --prune'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 alias gp='git push origin HEAD'
@@ -19,6 +20,5 @@ alias gb='git branch'
 alias gst='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias glom='git pull origin master'
 alias gpom='git push origin master'
-alias g='git'
 alias ga='git add'
-alias uncache='git rm --cached -r '
+alias guncache='git rm --cached -r '
