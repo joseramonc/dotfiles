@@ -4,6 +4,7 @@ hub_path=$(which hub)
 if (( $+commands[hub] ))
 then
   alias git=$hub_path
+  alias g=$hub_path
 fi
 
 # The rest of my fun git aliases
@@ -19,6 +20,6 @@ alias gb='git branch'
 alias gst='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias glom='git pull origin master'
 alias gpom='git push origin master'
-alias g='git'
 alias ga='git add'
-alias uncache='git rm --cached -r '
+alias guncache='git rm --cached -r '
+compdef g=git

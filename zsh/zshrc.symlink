@@ -26,25 +26,27 @@ do
 done
 
 
+# initialize autocomplete here, otherwise functions won't be loaded
+autoload -Uz compinit && compinit
+
 # load everything but the path and completion files
 for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
 do
   source $file
 done
 
-# initialize autocomplete here, otherwise functions won't be loaded
-autoload -U compinit
-compinit
-
 # load every completion after autocomplete loads
 for file in ${(M)config_files:#*/completion.zsh}
 do
   source $file
 done
-compdef _c c
+
 
 unset config_files
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+
+ssh-add ~/.ssh/id_rsa
+compdef _c c
