@@ -53,6 +53,7 @@
     fontSize: 15
     invisibles: {}
     showIndentGuide: true
+    tabType: "soft"
   emmet: {}
   "exception-reporting":
     userId: "f6992024-6e66-279c-64e4-816ff0307646"
@@ -79,7 +80,6 @@
     onSave: "untabify"
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
     showOnRightSide: true
   welcome:
     showOnStartup: false
