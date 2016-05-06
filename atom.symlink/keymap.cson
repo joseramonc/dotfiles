@@ -22,6 +22,7 @@
   'cmd-+': 'unset!'
   'cmd--': 'unset!'
   'cmd-_': 'unset!'
+  'cmd-0': 'unset!'
 
   'cmd-alt-w': 'tabs:close-other-tabs'
 
