@@ -4,8 +4,9 @@ hub_path=$(which hub)
 if (( $+commands[hub] ))
 then
   alias git=$hub_path
-  alias g=$hub_path
 fi
+alias g=$hub_path
+alias g=git
 
 # The rest of my fun git aliases
 alias gl='git pull --prune'
