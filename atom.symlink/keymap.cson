@@ -15,7 +15,7 @@
   'cmd-o': 'rails-transporter:open-view'
 
   # remove horrible cmd-shift-o window prompt
-  'cmd-shift-o': 'unset!'
+  # 'cmd-shift-o': 'unset!'
 
   # Font size
   'cmd-=': 'unset!'

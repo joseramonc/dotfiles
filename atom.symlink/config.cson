@@ -15,7 +15,6 @@
       "language-xml"
       "language-toml"
       "language-source"
-      "language-python"
       "language-property-list"
       "language-perl"
       "language-mustache"
@@ -31,6 +30,7 @@
       "bookmarks"
       "language-csharp"
       "language-objective-c"
+      "split-diff"
     ]
     ignoredNames: [
       ".bundle"
@@ -41,6 +41,7 @@
     packagesWithKeymapsDisabled: [
       "emmet"
       "autocomplete-atom-api"
+      "git-diff"
     ]
     projectHome: "/Users/joseramonc/src"
     themes: [
@@ -53,10 +54,11 @@
     fontSize: 15
     invisibles: {}
     showIndentGuide: true
-    tabType: "soft"
   emmet: {}
   "exception-reporting":
     userId: "f6992024-6e66-279c-64e4-816ff0307646"
+  "git-diff":
+    showIconsInEditorGutter: true
   "markdown-preview":
     grammars: [
       "source.gfm"
@@ -76,10 +78,12 @@
       "text.git-commit"
       "text.plain"
     ]
+  "split-diff": {}
   "tabs-to-spaces":
     onSave: "untabify"
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
     showOnRightSide: true
   welcome:
     showOnStartup: false
