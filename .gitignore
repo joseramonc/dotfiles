@@ -5,3 +5,6 @@ atom.symlink/*
 !atom.symlink/keymap.cson
 
 git/gitconfig.symlink
+
+.DS_Store
+.swp

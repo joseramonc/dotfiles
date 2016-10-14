@@ -44,9 +44,10 @@ done
 
 unset config_files
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+eval "$(rbenv init -)"
 
 export PS1='$(f_notifyme)'$PS1
 compdef _c c
+
+export SOCKET_DIR=/usr/local/var/www
+export LOG_DIR=/usr/local/var/log/nginx
