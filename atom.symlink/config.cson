@@ -85,9 +85,5 @@
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true
     showOnRightSide: true
-  wakatime:
-    apikey: "Saved in your ~/.wakatime.cfg file"
-  "wakatime-hidden":
-    lastInit: 1476370171
   welcome:
     showOnStartup: false
