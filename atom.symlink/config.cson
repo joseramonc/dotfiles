@@ -25,12 +25,12 @@
       "language-clojure"
       "exception-reporting"
       "autoflow"
-      "link"
       "timecop"
       "bookmarks"
       "language-csharp"
       "language-objective-c"
       "split-diff"
+      "link"
     ]
     ignoredNames: [
       ".bundle"
@@ -83,7 +83,6 @@
     onSave: "untabify"
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
     showOnRightSide: true
   welcome:
     showOnStartup: false
