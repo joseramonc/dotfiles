@@ -45,7 +45,7 @@
     ]
     projectHome: "/Users/joseramonc/src"
     themes: [
-      "nucleus-dark-ui"
+      "one-dark-ui"
       "solarized-dark-syntax"
     ]
   editor:
@@ -83,6 +83,7 @@
     onSave: "untabify"
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
     showOnRightSide: true
   welcome:
     showOnStartup: false

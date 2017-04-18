@@ -1,4 +1,33 @@
 'body':
+  # better arrows
+  'alt-j': 'core:move-left'
+  'alt-shift-j': 'core:select-left'
+
+  'alt-l': 'core:move-right'
+  'alt-shift-l': 'core:select-right'
+
+  'alt-i': 'core:move-up'
+  'alt-shift-i': 'core:select-up'
+
+  'alt-k': 'core:move-down'
+  'alt-shift-k': 'core:select-down'
+
+  'alt-h': 'editor:move-to-beginning-of-screen-line'
+  'alt-H': 'editor:select-to-beginning-of-line'
+
+  'alt-;': 'editor:move-to-end-of-screen-line'
+  'alt-:': 'editor:select-to-end-of-line' # alt-shift-
+
+  "alt-'": 'editor:move-to-end-of-screen-line'
+  'alt-"': 'editor:select-to-end-of-line' # alt-shift-'
+
+  'alt-9': 'core:backspace'
+  'alt-0': 'core:backspace'
+  'alt--': 'core:backspace'
+  'alt-=': 'core:backspace'
+  'alt-o': 'core:backspace'
+  'alt-O': 'editor:delete-to-beginning-of-word'
+
   # reveal current file in tree view
   'cmd-i': 'tree-view:reveal-active-file'
 
@@ -7,17 +36,12 @@
 
   'cmd-shift-S': 'core:save'
 
-  'alt-j': 'editor:move-to-previous-word-boundary'
-  'alt-k': 'editor:move-to-next-word-boundary'
-  'alt-shift-j': 'editor:select-to-previous-word-boundary'
-  'alt-shift-k': 'editor:select-to-next-word-boundary'
-
   'cmd-o': 'rails-transporter:open-view'
 
   # remove horrible cmd-shift-o window prompt
-  # 'cmd-shift-o': 'unset!'
+  'cmd-shift-o': 'unset!'
 
-  # Font size
+  # Disable Font size
   'cmd-=': 'unset!'
   'cmd-+': 'unset!'
   'cmd--': 'unset!'
@@ -40,6 +64,7 @@
 
 'atom-workspace atom-text-editor:not([mini])':
   'cmd-j': 'unset!'
+  'alt-h': 'unset!'
 
   'cmd-shift-e': 'emmet:expand-abbreviation'
 
@@ -60,7 +85,6 @@
   'ctrl-d': 'emmet:balance-outward'
   'alt-s': 'emmet:update-tag'
   'alt-r': 'emmet:remove-tag'
-  'alt-j': 'emmet:go-to-matching-pair'
   'alt-w': 'emmet:wrap-with-abbreviation'
   'cmd-e': 'emmet:expand-abbreviation'
 
@@ -69,6 +93,9 @@
   'cmd-i': 'tree-view:reveal-active-file'
   # join lines
   'shift-cmd-J': 'editor:join-lines'
+
+  'cmd-shift-l': 'unset!'
+
 
 
 '.tree-view':
