@@ -37,13 +37,19 @@ unpushed () {
 }
 
 need_push () {
-  if [[ $(unpushed) == "" ]]
+  if [ $($git rev-parse --is-inside-work-tree 2>/dev/null) ]
   then
-    echo ""
-  else
-    echo " with %{$fg_bold[magenta]%}unpushed%{$reset_color%} "
+    number=$($git cherry -v origin/$(git symbolic-ref --short HEAD) 2>/dev/null | wc -l | bc)
+
+    if [[ $number == 0 ]]
+    then
+      echo " "
+    else
+      echo " with %{$fg_bold[magenta]%}$number unpushed%{$reset_color%}"
+    fi
   fi
 }
+
 
 ruby_version() {
   echo "$(rbenv version | awk '{print $1}')"
