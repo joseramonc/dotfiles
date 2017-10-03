@@ -50,7 +50,6 @@ need_push () {
   fi
 }
 
-
 ruby_version() {
   echo "$(rbenv version | awk '{print $1}')"
 }
