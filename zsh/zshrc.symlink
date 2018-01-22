@@ -49,5 +49,5 @@ eval "$(rbenv init -)"
 export PS1='$(f_notifyme)'$PS1
 compdef _c c
 
-export SOCKET_DIR=/usr/local/var/www
-export LOG_DIR=/usr/local/var/log/nginx
+export HOMEBREW_SOCKET_DIR=/usr/local/var/www
+export HOMEBREW_LOG_DIR=/usr/local/var/log/nginx

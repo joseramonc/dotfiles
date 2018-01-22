@@ -46,7 +46,7 @@ bindkey '^[[1;5C' forward-word                        # [Alt-RightArrow] - move 
 bindkey '^[[1;5D' backward-word                       # [Alt-LeftArrow] - move backward one word
 
 # Skip to start/end of line with cmd-arrow, text-editors default on osx
-#since @joseramonc iTerm is configure to send those commandns with [Cmd-LeftArrow] and [Cmd-RightArrow]
+# since @joseramonc iTerm is configured to send those commandns with [Cmd-LeftArrow] and [Cmd-RightArrow]
 bindkey '[[1;0D' beginning-of-line                    # [Cmd-LeftArrow] - Go to beggining of line
 bindkey '[[1;1D' end-of-line                          # [Cmd-RightArrow] - Go to beggining of line
 
