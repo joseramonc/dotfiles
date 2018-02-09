@@ -1,4 +1,8 @@
 'body':
+  'cmd-q': 'unset!'
+  'cmd-escape': 'application:quit'
+  'alt-cmd-q': 'application:quit'
+
   # better arrows
   'alt-j': 'core:move-left'
   'alt-shift-j': 'core:select-left'

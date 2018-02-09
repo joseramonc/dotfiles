@@ -62,6 +62,8 @@
   emmet: {}
   "exception-reporting":
     userId: "f6992024-6e66-279c-64e4-816ff0307646"
+  "find-and-replace": {}
+  "fuzzy-finder": {}
   "git-diff":
     showIconsInEditorGutter: true
   "markdown-preview":
