@@ -23,6 +23,8 @@
 
   'alt-9': 'core:backspace'
   'alt-0': 'core:backspace'
+  'alt-]': 'core:backspace'
+  'alt-\\': 'editor:delete-to-end-of-word'
   'alt--': 'core:backspace'
   'alt-=': 'core:backspace'
   'alt-o': 'core:backspace'
@@ -63,6 +65,7 @@
 
 
 'atom-workspace atom-text-editor:not([mini])':
+
   'cmd-j': 'unset!'
   'alt-h': 'unset!'
 
