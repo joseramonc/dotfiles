@@ -1,7 +1,5 @@
 'body':
   'cmd-q': 'unset!'
-  'cmd-escape': 'application:quit'
-  'alt-cmd-q': 'application:quit'
 
   # better arrows
   'alt-j': 'core:move-left'
