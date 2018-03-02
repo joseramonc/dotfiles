@@ -14,13 +14,10 @@ alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C
 alias gp='git push origin HEAD'
 alias gd='git diff'
 alias gc='git commit'
-alias gca='git commit -a'
+alias gcm='git commit -S'
 alias gco='git checkout'
-alias gcb='git copy-branch-name'
 alias gb='git branch'
 alias gst='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
-alias glom='git pull origin master'
-alias gpom='git push origin master'
 alias ga='git add'
 alias guncache='git rm --cached -r '
 compdef g=git
