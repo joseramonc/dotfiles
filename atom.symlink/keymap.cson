@@ -1,5 +1,10 @@
 'body':
+  # Never quit application with this
   'cmd-q': 'unset!'
+
+  # Never prompt to open file/folder
+  'cmd-o': 'unset!'
+  'cmd-shift-o': 'unset!'
 
   # better arrows
   'alt-j': 'core:move-left'
@@ -35,14 +40,10 @@
   # reveal current file in tree view
   'cmd-i': 'tree-view:reveal-active-file'
 
+  # Never save as, only save.
   'cmd-shift-S': 'core:save'
 
-  'cmd-o': 'rails-transporter:open-view'
-
-  # remove horrible cmd-shift-o window prompt
-  'cmd-shift-o': 'unset!'
-
-  # Disable Font size
+  # Disable Font resizing
   'cmd-=': 'unset!'
   'cmd-+': 'unset!'
   'cmd--': 'unset!'
@@ -51,7 +52,8 @@
 
   'cmd-alt-w': 'tabs:close-other-tabs'
 
-  # Default move pane
+  # Default split panes
+  # Up
   'cmd-k up': 'pane:split-up-and-move-active-item'
   'cmd-k down': 'pane:split-down-and-move-active-item'
   'cmd-k right': 'pane:split-right-and-move-active-item'
@@ -68,6 +70,9 @@
   'cmd-j': 'unset!'
   'alt-h': 'unset!'
 
+  'cmd-o': 'rails-transporter:open-view'
+  'cmd-p': 'rails-transporter:open-partial-template'
+
   # go to line prompt
   'cmd-m': 'go-to-line:toggle'
 
@@ -76,9 +81,8 @@
   'alt-ctrl-d': 'emmet:balance-outward'
 
 '.platform-darwin':
-  'cmd-p': 'rails-transporter:open-partial-template'
 
-  # overwrite comment keybinding
+  # Add additional comment keybind
   'cmd-.': 'editor:toggle-line-comments'
 
   # toggle fuzzy finder
@@ -93,15 +97,12 @@
   'alt-w': 'emmet:wrap-with-abbreviation'
   'cmd-e': 'emmet:expand-abbreviation'
 
-  'cmd-shift-r': 'script:run'
-
   'cmd-i': 'tree-view:reveal-active-file'
+
   # join lines
   'shift-cmd-J': 'editor:join-lines'
 
   'cmd-shift-l': 'unset!'
-
-
 
 '.tree-view':
   # reveal selected tree view file in finder

@@ -47,6 +47,7 @@
       "emmet"
       "autocomplete-atom-api"
       "git-diff"
+      "rails-transporter"
     ]
     projectHome: "/Users/joseramonc/src"
     themes: [
