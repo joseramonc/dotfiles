@@ -86,6 +86,9 @@
       "text.plain"
     ]
   "split-diff": {}
+  tablr:
+    csvEditor: {}
+    defaultColumnNamingMethod: "numericZeroBased"
   "tabs-to-spaces":
     onSave: "untabify"
   "tree-view":
