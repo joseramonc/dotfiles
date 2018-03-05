@@ -6,8 +6,3 @@
 #
 # An example hack to make opened Markdown files always be soft wrapped:
 #
-path = require 'path'
-
-atom.workspace.observeTextEditors (editor) ->
-  if path.extname(editor.getPath()) is '.md'
-    editor.setSoftWrapped(true)
