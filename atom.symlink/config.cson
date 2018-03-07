@@ -36,6 +36,11 @@
       "language-json"
       "language-php"
       "language-python"
+      "autocomplete-atom-api"
+      "encoding-selector"
+      "package-generator"
+      "styleguide"
+      "language-typescript"
     ]
     ignoredNames: [
       ".bundle"
@@ -48,6 +53,8 @@
       "autocomplete-atom-api"
       "git-diff"
       "rails-transporter"
+      "archive-view"
+      "go-to-line"
     ]
     projectHome: "/Users/joseramonc/src"
     themes: [
