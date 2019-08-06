@@ -6,6 +6,9 @@
   'cmd-o': 'unset!'
   'cmd-shift-o': 'unset!'
 
+  # Dont change tabs with ctrl-tab
+  'ctrl-tab': 'unset!'
+
   # better arrows
   'alt-j': 'core:move-left'
   'alt-shift-j': 'core:select-left'
@@ -53,7 +56,6 @@
   'cmd-alt-w': 'tabs:close-other-tabs'
 
   # Default split panes
-  # Up
   'cmd-k up': 'pane:split-up-and-move-active-item'
   'cmd-k down': 'pane:split-down-and-move-active-item'
   'cmd-k right': 'pane:split-right-and-move-active-item'
@@ -65,13 +67,22 @@
   'cmd-k cmd-left': 'pane:split-left-and-copy-active-item'
 
 
+  'shift-cmd-L': 'rails-latest-migration:find'
+
+'atom-workspace atom-text-editor':
+  'cmd-r': 'unset!'
+
 'atom-workspace atom-text-editor:not([mini])':
 
   'cmd-j': 'unset!'
   'alt-h': 'unset!'
+  'cmd-r': 'symbols-view:toggle-file-symbols'
 
-  'cmd-o': 'rails-transporter:open-view'
-  'cmd-p': 'rails-transporter:open-partial-template'
+  # Rails snippets
+  'shift-cmd-n': 'rails-partials:generate'
+
+  'shift-cmd-o': 'rails-transporter:open-view'
+  'shift-cmd-i': 'rails-transporter:open-partial-template'
 
   # go to line prompt
   'cmd-m': 'go-to-line:toggle'

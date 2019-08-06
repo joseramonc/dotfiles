@@ -3,6 +3,7 @@
     autoActivationDelay: 500
     backspaceTriggersAutocomplete: true
     confirmCompletion: "enter"
+    extraWordCharacters: "."
   core:
     closeEmptyWindows: false
     disabledPackages: [
@@ -26,21 +27,26 @@
       "autoflow"
       "timecop"
       "bookmarks"
-      "language-csharp"
       "language-objective-c"
       "split-diff"
-      "link"
-      "markdown-preview"
       "language-c"
       "language-git"
       "language-json"
-      "language-php"
-      "language-python"
       "autocomplete-atom-api"
       "encoding-selector"
       "package-generator"
       "styleguide"
       "language-typescript"
+      "language-csharp"
+      "update-package-dependencies"
+      "markdown-preview"
+      "language-python"
+      "language-php"
+      "language-sql"
+      "language-shellscript"
+      "language-rust-bundled"
+      "about"
+      "language-ruby-on-rails"
     ]
     ignoredNames: [
       ".bundle"
@@ -55,12 +61,16 @@
       "rails-transporter"
       "archive-view"
       "go-to-line"
+      "rails-latest-migration"
     ]
     projectHome: "/Users/joseramonc/src"
+    restorePreviousWindowsOnStart: "no"
+    telemetryConsent: "no"
     themes: [
       "one-dark-ui"
       "solarized-dark-syntax"
     ]
+    useTreeSitterParsers: false
   editor:
     autoIndentOnPaste: true
     fontFamily: "Menlo"
@@ -71,7 +81,11 @@
   "exception-reporting":
     userId: "f6992024-6e66-279c-64e4-816ff0307646"
   "find-and-replace": {}
-  "fuzzy-finder": {}
+  "fuzzy-finder":
+    prefillFromSelection: true
+    preserveLastSearch: true
+    scoringSystem: "fast"
+    useRipGrep: true
   "git-diff":
     showIconsInEditorGutter: true
   "markdown-preview":
@@ -82,6 +96,7 @@
       "text.plain.null-grammar"
     ]
   "rails-partials": {}
+  "rails-transporter": {}
   "selector-to-tag":
     activeForFileTypes: [
       ".html"
@@ -100,8 +115,10 @@
   "tabs-to-spaces":
     onSave: "untabify"
   "tree-view":
+    alwaysOpenExisting: true
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true
     showOnRightSide: true
+    sortFoldersBeforeFiles: false
   welcome:
     showOnStartup: false

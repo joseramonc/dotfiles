@@ -26,6 +26,11 @@ do
 done
 
 
+# add nvm thing
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+
 # initialize autocomplete here, otherwise functions won't be loaded
 autoload -Uz compinit && compinit
 
@@ -46,8 +51,10 @@ unset config_files
 
 eval "$(rbenv init -)"
 
-export PS1='$(f_notifyme)'$PS1
 compdef _c c
 
 export HOMEBREW_SOCKET_DIR=/usr/local/var/www
 export HOMEBREW_LOG_DIR=/usr/local/var/log/nginx
+
+export PS1='$(f_notifyme)'$PS1
+
