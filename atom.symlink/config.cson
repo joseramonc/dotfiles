@@ -47,6 +47,7 @@
       "language-rust-bundled"
       "about"
       "language-ruby-on-rails"
+      "language-javascript-jsx"
     ]
     ignoredNames: [
       ".bundle"
@@ -73,13 +74,18 @@
     useTreeSitterParsers: false
   editor:
     autoIndentOnPaste: true
-    fontFamily: "Menlo"
+    fontFamily: "Hasklig-Light, FiraCode-Light, Menlo"
     fontSize: 15
     invisibles: {}
     showIndentGuide: true
   emmet: {}
   "exception-reporting":
     userId: "f6992024-6e66-279c-64e4-816ff0307646"
+  "file-icons":
+    onChanges: true
+    strategies:
+      hashbangs: false
+      modelines: false
   "find-and-replace": {}
   "fuzzy-finder":
     prefillFromSelection: true

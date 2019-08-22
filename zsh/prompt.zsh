@@ -1,6 +1,4 @@
 autoload colors && colors
-# cheers, @ehrenmurdick
-# http://github.com/ehrenmurdick/config/blob/master/zsh/prompt.zsh
 
 git="$commands[git]"
 
@@ -15,21 +13,21 @@ git_dirty() {
   else
     if [[ $($git status --porcelain) == "" ]]
     then
-      echo " $(git_tag)%{$fg_bold[green]%}$(git_prompt_info)%{$reset_color%}"
+      echo " $(git_branch_prefix)%{$fg_bold[green]%}$(git_prompt_info)%{$reset_color%}"
     else
-      echo " $(git_tag)%{$fg_bold[red]%}$(git_prompt_info)%{$reset_color%}"
+      echo " $(git_branch_prefix)%{$fg_bold[red]%}$(git_prompt_info)%{$reset_color%}"
     fi
   fi
 }
 
-git_tag(){
-  echo "%{$fg_bold[blue]%}@"
+git_branch_prefix(){
+  echo "%{$fg_bold[blue]%}-> "
 }
 
 git_prompt_info () {
- ref=$($git symbolic-ref HEAD 2>/dev/null) || return
- # echo "(%{\e[33m%}${ref#refs/heads/}%{\e[0m%})" #=> @(master)
- echo "${ref#refs/heads/}" #=> @master
+  ref=$($git symbolic-ref HEAD 2>/dev/null) || return
+  # echo "(%{\e[33m%}${ref#refs/heads/}%{\e[0m%})" #=> @(master)
+  echo "${ref#refs/heads/}" #=> @master
 }
 
 unpushed () {

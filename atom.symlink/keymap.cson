@@ -101,11 +101,9 @@
 
 '.platform-darwin atom-text-editor:not([mini])':
   # select text inside brackets
-  'alt-d': 'emmet:balance-inward'
-  'ctrl-d': 'emmet:balance-outward'
-  'alt-s': 'emmet:update-tag'
-  'alt-r': 'emmet:remove-tag'
-  'alt-w': 'emmet:wrap-with-abbreviation'
+  'alt-d': 'emmet:bracket-matcher:select-inside-brackets'
+  'ctrl-d': 'bracket-matcher:select-inside-brackets'
+  'alt-w': 'bracket-matcher:select-inside-brackets'
   'cmd-e': 'emmet:expand-abbreviation'
 
   'cmd-i': 'tree-view:reveal-active-file'

@@ -1,3 +1,5 @@
+SECONDS=0
+# do some work
 
 export ZSH=$HOME/.dotfiles
 
@@ -28,8 +30,7 @@ done
 
 # add nvm thing
 export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh" --no-use  # This loads nvm
 
 # initialize autocomplete here, otherwise functions won't be loaded
 autoload -Uz compinit && compinit
@@ -57,4 +58,5 @@ export HOMEBREW_SOCKET_DIR=/usr/local/var/www
 export HOMEBREW_LOG_DIR=/usr/local/var/log/nginx
 
 export PS1='$(f_notifyme)'$PS1
-
+duration=$SECONDS
+echo "$(($duration / 60)) minutes and $(($duration % 60)) seconds elapsed."
