@@ -21,13 +21,13 @@ git_dirty() {
 }
 
 git_branch_prefix(){
-  echo "%{$fg_bold[blue]%}-> "
+  echo "%{$fg_bold[blue]%}->"
 }
 
 git_prompt_info () {
   ref=$($git symbolic-ref HEAD 2>/dev/null) || return
   # echo "(%{\e[33m%}${ref#refs/heads/}%{\e[0m%})" #=> @(master)
-  echo "${ref#refs/heads/}" #=> @master
+  echo " ${ref#refs/heads/}" #=> @master
 }
 
 unpushed () {
@@ -41,13 +41,16 @@ need_push () {
 
     if [[ $number == 0 ]]
     then
-      echo " "
+      echo ""
     else
       echo " with %{$fg_bold[magenta]%}$number unpushed%{$reset_color%}"
     fi
   fi
 }
 
+#################
+# Ruby version
+#################
 ruby_version() {
   echo "$(rbenv version | awk '{print $1}')"
 }
@@ -56,12 +59,15 @@ rb_prompt() {
   echo "%{$fg_bold[yellow]%}$(ruby_version)%{$reset_color%}"
 }
 
+#################
+# Directory
+#################
 directory_name() {
-  echo "%{$fg_bold[cyan]%}%1/%\%{$reset_color%}"
+  echo "%{$fg_bold[cyan]%}%~%{$reset_color%}"
 }
 
 # emojis in the prompt.
-export PROMPT=$'$(directory_name) $(rb_prompt)$(git_dirty)$(need_push)%(?:🐥 :👹 %s) '
+export PROMPT=$'$(directory_name) $(rb_prompt)$(git_dirty)$(need_push) %(?:🐥 :👹 %s) '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
 }
