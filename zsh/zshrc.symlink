@@ -1,21 +1,12 @@
 SECONDS=0
-# do some work
 
 export ZSH=$HOME/.dotfiles
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# textmate configuration
-export EDITOR="/usr/local/bin/mate -w"
-
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/src
-
-# Stash your environment variables in ~/.localrc. This means they'll stay out
-# of your main dotfiles repository (which may be public, like this one), but
-# you'll have access to them in your scripts.
-source ~/.localrc
 
 # all of our zsh files
 typeset -U config_files
@@ -57,6 +48,7 @@ compdef _c c
 export HOMEBREW_SOCKET_DIR=/usr/local/var/www
 export HOMEBREW_LOG_DIR=/usr/local/var/log/nginx
 
-export PS1='$(f_notifyme)'$PS1
+source ~/.iterm2_shell_integration.zsh
+
 duration=$SECONDS
-echo "$(($duration / 60)) minutes and $(($duration % 60)) seconds elapsed."
+echo "$(($duration % 60)) seconds took to load .zshrc config"

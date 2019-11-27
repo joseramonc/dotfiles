@@ -1,5 +1,0 @@
-# executes a single test in a minitest ruby test suite
-
-minitest(){
-  rake test TEST=$1
-}

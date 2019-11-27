@@ -15,7 +15,6 @@ alias gd='git diff'
 alias gc='git commit'
 alias gcm='git commit -S'
 alias gco='git checkout'
-alias gb='git branch'
 alias gst='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias ga='git add'
 alias guncache='git rm --cached -r '

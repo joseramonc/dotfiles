@@ -43,7 +43,6 @@
       "language-python"
       "language-php"
       "language-sql"
-      "language-shellscript"
       "language-rust-bundled"
       "about"
       "language-ruby-on-rails"
@@ -56,7 +55,6 @@
     ]
     openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
-      "emmet"
       "autocomplete-atom-api"
       "git-diff"
       "rails-transporter"
@@ -74,7 +72,7 @@
     useTreeSitterParsers: false
   editor:
     autoIndentOnPaste: true
-    fontFamily: "Hasklig-Light, FiraCode-Light, Menlo"
+    fontFamily: "Hasklig, FiraCode-Light, Menlo"
     fontSize: 15
     invisibles: {}
     showIndentGuide: true

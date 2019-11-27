@@ -66,7 +66,10 @@ directory_name() {
   echo "%{$fg_bold[cyan]%}%~%{$reset_color%}"
 }
 
-# emojis in the prompt.
+
+#################
+# Actually set the prompt
+#################
 export PROMPT=$'$(directory_name) $(rb_prompt)$(git_dirty)$(need_push) %(?:🐥 :👹 %s) '
 set_prompt () {
   export RPROMPT="%{$fg_bold[cyan]%}%{$reset_color%}"
