@@ -59,9 +59,12 @@
     "command": "run_multiple_commands", 
     "args": {
       "commands": [
-        {"command": "copy", "args": null },
+        {"command": "copy", "args": null, "context": "window" },
         {"command": "show_panel", "args": {"panel": "find", "reverse": false}, "context": "window" },
-        {"command": "paste", "args": null, "context": "window" }
+        {"command": "select_all", "args": null, "context": "window" },
+        {"command": "paste", "args": null, "context": "window" },
+        {"command": "select_all", "args": null, "context": "window" },
+
       ]
     }
   },
