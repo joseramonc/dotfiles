@@ -12,6 +12,8 @@
 	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
+	<key>ApplePressAndHoldEnabled</key>
+	<false/>
 	<key>AppleScrollAnimationEnabled</key>
 	<integer>0</integer>
 	<key>AppleSmoothFixedFontsSizeThreshold</key>
@@ -605,13 +607,15 @@ Select Next Tab</string>
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Documents</string>
+	<string>~/.dotfiles/iterm2</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSNavPanelExpandedSizeForSaveMode</key>
-	<string>{712, 448}</string>
+	<string>{841, 448}</string>
+	<key>NSNavPanelExpandedStateForSaveMode</key>
+	<true/>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -654,7 +658,7 @@ Select Next Tab</string>
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>466 447 347 181 0 0 1280 777 </string>
+	<string>219 230 841 470 0 0 1280 777 </string>
 	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
 	<string>332 452 616 174 0 0 1280 777 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
@@ -666,7 +670,7 @@ Select Next Tab</string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 193 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>46 64 1158 675 0 0 1280 777 </string>
+	<string>53 48 1221 658 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2124,6 +2128,8 @@ Select Next Tab</string>
 			<true/>
 			<key>Shortcut</key>
 			<string></string>
+			<key>Show Mark Indicators</key>
+			<false/>
 			<key>Show Status Bar</key>
 			<true/>
 			<key>Silence Bell</key>
@@ -2268,7 +2274,7 @@ Select Next Tab</string>
 					</dict>
 					<dict>
 						<key>class</key>
-						<string>iTermStatusBarWorkingDirectoryComponent</string>
+						<string>iTermStatusBarCPUUtilizationComponent</string>
 						<key>configuration</key>
 						<dict>
 							<key>knobs</key>
@@ -2277,23 +2283,6 @@ Select Next Tab</string>
 								<integer>1</integer>
 								<key>base: priority</key>
 								<real>5</real>
-								<key>maxwidth</key>
-								<real>+infinity</real>
-								<key>minwidth</key>
-								<integer>0</integer>
-								<key>shared text color</key>
-								<dict>
-									<key>Alpha Component</key>
-									<real>1</real>
-									<key>Blue Component</key>
-									<real>0.62999999523162842</real>
-									<key>Color Space</key>
-									<string>sRGB</string>
-									<key>Green Component</key>
-									<real>0.89999997615814209</real>
-									<key>Red Component</key>
-									<real>0.76499998569488525</real>
-								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
 							<dict>
@@ -2306,7 +2295,7 @@ Select Next Tab</string>
 					</dict>
 					<dict>
 						<key>class</key>
-						<string>iTermStatusBarGitComponent</string>
+						<string>iTermStatusBarMemoryUtilizationComponent</string>
 						<key>configuration</key>
 						<dict>
 							<key>knobs</key>
@@ -2315,25 +2304,6 @@ Select Next Tab</string>
 								<integer>1</integer>
 								<key>base: priority</key>
 								<real>5</real>
-								<key>iTermStatusBarGitComponentPollingIntervalKey</key>
-								<real>2</real>
-								<key>maxwidth</key>
-								<real>+infinity</real>
-								<key>minwidth</key>
-								<integer>0</integer>
-								<key>shared text color</key>
-								<dict>
-									<key>Alpha Component</key>
-									<real>1</real>
-									<key>Blue Component</key>
-									<real>0.90000000000000002</real>
-									<key>Color Space</key>
-									<string>sRGB</string>
-									<key>Green Component</key>
-									<real>0.90000000000000002</real>
-									<key>Red Component</key>
-									<real>0.63</real>
-								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
 							<dict>
@@ -2360,6 +2330,8 @@ Select Next Tab</string>
 							<dict>
 								<key>algorithm</key>
 								<integer>0</integer>
+								<key>font</key>
+								<string>.AppleSystemUIFont 12</string>
 							</dict>
 						</dict>
 					</dict>
@@ -3211,10 +3183,13 @@ Select Next Tab</string>
 	</array>
 	<key>NoSyncAllAppVersions</key>
 	<array>
-		<string>3.2.9</string>
-		<string>3.3.1</string>
-		<string>3.3.0</string>
 		<string>3.3.6</string>
+		<string>3.3.8</string>
+		<string>3.3.1</string>
+		<string>3.3.7</string>
+		<string>3.3.9</string>
+		<string>3.2.9</string>
+		<string>3.3.0</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
 	<true/>
@@ -3223,6 +3198,10 @@ Select Next Tab</string>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
 	<true/>
 	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
+	<integer>0</integer>
+	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt</key>
+	<true/>
+	<key>NoSyncDoNotWarnBeforePastingOneLineEndingInNewlineAtShellPrompt_selection</key>
 	<integer>0</integer>
 	<key>NoSyncFrame_SessionsPreferences</key>
 	<dict>
@@ -3236,18 +3215,18 @@ Select Next Tab</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1280, 800}}</string>
 		<key>topLeft</key>
-		<string>{160, 639}</string>
+		<string>{152, 686}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>F4744326-D2C9-4A4B-B180-E2949A0F8A88</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>13</integer>
+	<integer>34</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>586883871.51235294</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -3978,31 +3957,11 @@ Select Next Tab</string>
 	</dict>
 	<key>NoSyncSaveDocumentAsPathSet_saveDocumentAs:</key>
 	<true/>
-	<key>NoSyncSearchHistory</key>
-	<array>
-		<string>order</string>
-		<string>sort</string>
-		<string>command</string>
-		<string>Jaaaaa</string>
-		<string>ClientAlreadyStar</string>
-		<string>done</string>
-		<string>pending</string>
-		<string>state</string>
-		<string>view</string>
-	</array>
-	<key>NoSyncSearchHistory2</key>
-	<array>
-		<string>notify</string>
-		<string>******</string>
-		<string>clear_filter</string>
-		<string>*******</string>
-		<string>admin_procedures</string>
-		<string>adminprocedures</string>
-		<string>admiprocedures</string>
-		<string>admprocedures</string>
-		<string>adprocedures</string>
-		<string>aprocedures</string>
-	</array>
+	<key>NoSyncSavePanelSavedSettings_SaveProfile</key>
+	<dict>
+		<key>Initial Directory</key>
+		<string>/Users/joseramonc/.dotfiles/iterm2</string>
+	</dict>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>496170977.88426501</real>
 	<key>OnlyWhenMoreTabs</key>
@@ -4082,7 +4041,7 @@ Select Next Tab</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2019-11-12T19:29:47Z</date>
+	<date>2020-06-08T17:41:38Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
@@ -4146,7 +4105,7 @@ Select Next Tab</string>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.6</string>
+	<string>3.3.9</string>
 	<key>kCPFavoritesUserDefaultsKey</key>
 	<array>
 		<data>

@@ -39,7 +39,6 @@
       "language-typescript"
       "language-csharp"
       "update-package-dependencies"
-      "markdown-preview"
       "language-python"
       "language-php"
       "language-sql"
@@ -47,6 +46,7 @@
       "about"
       "language-ruby-on-rails"
       "language-javascript-jsx"
+      "markdown-preview"
     ]
     ignoredNames: [
       ".bundle"
@@ -100,7 +100,13 @@
       "text.plain.null-grammar"
     ]
   "rails-partials": {}
-  "rails-transporter": {}
+  "rails-transporter":
+    viewFileExtension: [
+      "html.erb"
+      "html.slim"
+      "html.haml"
+      "js.erb"
+    ]
   "selector-to-tag":
     activeForFileTypes: [
       ".html"
@@ -121,7 +127,6 @@
   "tree-view":
     alwaysOpenExisting: true
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
     showOnRightSide: true
     sortFoldersBeforeFiles: false
   welcome:
