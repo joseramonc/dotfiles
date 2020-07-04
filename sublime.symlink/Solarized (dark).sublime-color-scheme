@@ -293,6 +293,16 @@
             "foreground": "var(yellow)"
         },
         {
+            "name": "Ruby: Numeric",
+            "scope": "source.ruby.rails constant.numeric.ruby",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "Ruby: Numeric",
+            "scope": "source.ruby.rails variable.other.readwrite.instance.ruby punctuation.definition.variable.ruby",
+            "foreground": "var(blue)"
+        },
+        {
             "name": "Ruby: Source activerecord",
             "scope": "source.ruby.rails support.function.activerecord.rails",
             "foreground": "var(base0)"
