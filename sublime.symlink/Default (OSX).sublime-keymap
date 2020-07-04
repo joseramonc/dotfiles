@@ -54,6 +54,7 @@
   { "keys": ["alt+."], "command": "power_cursor_activate" },
   // { "keys": ["alt+right"], "command": "power_cursor_activate" },
 
+  // Auto copy-paste when using search panes
   { 
     "keys": ["super+f"], 
     "command": "run_multiple_commands", 
@@ -61,6 +62,20 @@
       "commands": [
         {"command": "copy", "args": null, "context": "window" },
         {"command": "show_panel", "args": {"panel": "find", "reverse": false}, "context": "window" },
+        {"command": "select_all", "args": null, "context": "window" },
+        {"command": "paste", "args": null, "context": "window" },
+        {"command": "select_all", "args": null, "context": "window" },
+
+      ]
+    }
+  },
+  { 
+    "keys": ["super+shift+f"], 
+    "command": "run_multiple_commands", 
+    "args": {
+      "commands": [
+        {"command": "copy", "args": null, "context": "window" },
+        {"command": "show_panel", "args": {"panel": "find_in_files"}, "context": "window" },
         {"command": "select_all", "args": null, "context": "window" },
         {"command": "paste", "args": null, "context": "window" },
         {"command": "select_all", "args": null, "context": "window" },
