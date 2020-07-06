@@ -37,5 +37,10 @@ class RunMultipleCommandsCommand(sublime_plugin.TextCommand):
   def run(self, edit, commands = None):
     if commands is None:
       return # not an error
+
+    clipboard = sublime.get_clipboard()
+
     for command in commands:
       self.exec_command(command)
+
+    sublime.set_clipboard(clipboard)

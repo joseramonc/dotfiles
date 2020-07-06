@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+do |${1:param}|
+  ${1:# code}$0
+end
+]]></content>
+    <tabTrigger>dop</tabTrigger>
+    <scope>source.ruby.rails</scope>
+    <description>Do block with parameter</description>
+</snippet>

@@ -79,7 +79,6 @@
         {"command": "select_all", "args": null, "context": "window" },
         {"command": "paste", "args": null, "context": "window" },
         {"command": "select_all", "args": null, "context": "window" },
-
       ]
     }
   },

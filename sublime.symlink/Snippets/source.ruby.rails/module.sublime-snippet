@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+module ${1:UsersHelper}
+  ${0:# code}
+end]]></content>
+    <tabTrigger>module</tabTrigger>
+    <scope>source.ruby.rails</scope>
+    <description>Module</description>
+</snippet>

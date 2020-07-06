@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+class ${1:Name}
+  ${2:# code}
+end]]></content>
+    <tabTrigger>class</tabTrigger>
+    <scope>source.ruby.rails</scope>
+    <description>Class</description>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+class ${1:User} < ApplicationRecord
+  ${0:# code}
+end]]></content>
+    <tabTrigger>model</tabTrigger>
+    <scope>source.ruby.rails</scope>
+    <description>Model class</description>
+</snippet>

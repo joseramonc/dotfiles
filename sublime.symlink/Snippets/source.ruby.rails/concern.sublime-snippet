@@ -1,0 +1,22 @@
+<snippet>
+    <content><![CDATA[
+module ${1:ConcernName}
+  extend ActiveSupport::Concern
+  ${2:included do
+    ${3:# code }
+  end}
+
+  ${4:# def instance_method
+  #
+  # end}
+
+  module ClassMethods
+    ${5:# def static_method
+    #
+    # end}
+  end
+end]]></content>
+    <tabTrigger>concern</tabTrigger>
+    <scope>source.ruby.rails</scope>
+    <description>Concern</description>
+</snippet>

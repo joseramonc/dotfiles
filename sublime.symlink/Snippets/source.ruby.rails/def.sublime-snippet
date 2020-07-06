@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+def ${1:method}
+  ${2:# code}
+end]]></content>
+    <tabTrigger>def</tabTrigger>
+    <scope>source.ruby.rails</scope>
+    <description>Method definition</description>
+</snippet>

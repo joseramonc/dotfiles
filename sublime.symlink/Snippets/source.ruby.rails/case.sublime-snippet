@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+case ${1:element}
+when ${2:condition}
+end
+]]></content>
+    <tabTrigger>case</tabTrigger>
+    <scope>source.ruby.rails</scope>
+    <description>Case block</description>
+</snippet>

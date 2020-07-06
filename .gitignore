@@ -10,6 +10,7 @@ git/gitconfig.symlink
 .swp
 
 sublime.symlink/*
+!sublime.symlink/snippets/
 !sublime.symlink/Solarized (dark).sublime-color-scheme
 !sublime.symlink/run_multiple_commands_command.py
 !sublime.symlink/Preferences.sublime-settings

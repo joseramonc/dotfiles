@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+do
+  ${1:# code}
+end
+]]></content>
+    <tabTrigger>do</tabTrigger>
+    <scope>source.ruby.rails</scope>
+    <description>Do block</description>
+</snippet>
