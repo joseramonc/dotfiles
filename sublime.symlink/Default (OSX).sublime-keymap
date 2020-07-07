@@ -10,7 +10,21 @@
 
   // Reveal in sidebar
 	{ "keys": ["super+i"], "command": "reveal_in_side_bar"},
-  // { "keys": ["super+i", "super+o"], "command": "reveal_in_file_manager"},
+
+  // Create a new file aware of current directory
+  { "keys": ["super+i", "a"], "command": "new_file" },
+
+  // Reveal file in finder
+  { "keys": ["super+i", "o"], "command": "open_dir", "args": { "dir": "$file_path", "file": "$file_name"} },
+  { "keys": ["super+i", "super+o"], "command": "open_dir", "args": { "dir": "$file_path", "file": "$file_name"} },
+
+  // TODO: Rename file
+  // { "keys": ["super+i", "m"], "command": "rename_path", "args": { "paths": ["$file_name"]} },
+
+  // Copy file path
+  { "keys": ["super+i", "c"], "command": "copy_path" },
+  { "keys": ["super+i", "super+c"], "command": "copy_path" },
+  { "keys": ["super+o"], "command": "copy_path" },
 
   // Show sidebar
 	{ "keys": ["super+\\"], "command": "toggle_side_bar" },
@@ -38,10 +52,6 @@
   { "keys": ["alt+d"], "command": "expand_selection", "args": {"to": "brackets"} },
   { "keys": ["ctrl+d"], "command": "expand_selection", "args": {"to": "brackets"} },
 
-
-  // Create a new file aware of current directory
-  { "keys": ["super+i", "a"], "command": "new_file" },
-
   // Panes
   { "keys": ["super+k", "super+up"], "command": "new_pane" },
   { "keys": ["super+k", "super+right"], "command": "new_pane" },
@@ -53,6 +63,21 @@
   { "keys": ["alt+/"], "command": "power_cursor_activate" },
   { "keys": ["alt+."], "command": "power_cursor_activate" },
   // { "keys": ["alt+right"], "command": "power_cursor_activate" },
+
+  // Switch erb tags
+  { "keys": ["super+shift+."], "command": "erb", "context":
+    [
+      { "key": "selector", "operator": "equal", "operand": "text.html.ruby, text.haml, source.yaml, source.css, source.scss, source.js, source.coffee" }
+    ]
+  },
+  { "keys": ["super+shift+,"], "command": "erb", "context":
+    [
+      { "key": "selector", "operator": "equal", "operand": "text.html.ruby, text.haml, source.yaml, source.css, source.scss, source.js, source.coffee" }
+    ]
+  },
+
+  // Goto line
+  { "keys": ["super+m"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 
   // Auto copy-paste when using search panes
   { 

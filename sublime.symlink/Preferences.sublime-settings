@@ -1,4 +1,5 @@
 {
+	"close_windows_when_empty": false,
 	"color_scheme": "Packages/Solarized Color Scheme/Solarized (dark).sublime-color-scheme",
 	"ensure_newline_at_eof_on_save": true,
 	"extra_file_exclude_patterns":
@@ -43,7 +44,7 @@
 		"node_modules",
 		"tmp"
 	],
-	"font_face": "Hasklig, FiraCode-Light, Menlo",
+	"font_face": "Hasklig",
 	"font_size": 15,
 	"ignored_packages":
 	[

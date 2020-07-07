@@ -304,6 +304,11 @@
             "foreground": "var(blue)"
         },
         {
+            "name": "Ruby: logical operator",
+            "scope": "keyword.operator.logical.ruby, keyword.operator.conditional.ruby",
+            "foreground": "var(base0)"
+        },
+        {
             "name": "Ruby: Global Var",
             "scope": "source.ruby.rails variable.other.readwrite.global.ruby punctuation.definition.variable.ruby",
             "foreground": "var(blue)"
@@ -638,6 +643,66 @@
             "name": "JavaScript Variables",
             "scope": "variable.other.readwrite.js, variable.other.object.js, variable.other.constant.js",
             "foreground": "var(base0)"
-        }
+        },
+        {
+            "name": "JavaScript Class",
+            "scope": "support.class.js, support.class.builtin.js, variable.type.js",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "JavaScript this",
+            "scope": "variable.language.this.js",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "JavaScript Parameter function",
+            "scope": "variable.parameter.function.js",
+            "foreground": "var(base0)"
+        },
+        {
+            "name": "JavaScript dollar",
+            "scope": "variable.other.dollar.js, punctuation.dollar.js",
+            "foreground": "var(base0)"
+        },
+        {
+            "name": "JavaScript Function calls",
+            "scope": "variable.function.js",
+            "foreground": "var(base0)"
+        },
+        {
+            "name": "JavaScript Function calls",
+            "scope": "punctuation.section.block.begin.js, punctuation.section.block.end.js",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "JavaScript quotes",
+            "scope": "punctuation.definition.string.begin.js, punctuation.definition.string.end.js",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "JavaScript operator.relational",
+            "scope": "keyword.operator.relational.js",
+            "foreground": "var(base0)"
+        },
+        {
+            "name": "JavaScript operator.logical",
+            "scope": "keyword.operator.logical.js",
+            "foreground": "var(base0)"
+        },
+        {
+            "name": "JavaScript operator arithmetic",
+            "scope": "keyword.operator.arithmetic.js",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "JavaScript numbers",
+            "scope": "constant.numeric.decimal.js",
+            "foreground": "var(base0)"
+        },
+        {
+            "name": "JavaScript hash",
+            "scope": "entity.name.function.js",
+            "foreground": "var(base0)"
+        },
     ]
 }
