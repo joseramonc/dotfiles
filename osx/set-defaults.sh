@@ -17,7 +17,7 @@ chflags nohidden ~/Library
 # Finder                                                                      #
 ###############################################################################
 # Use list view in all Finder windows by default
-# Four-letter codes for the other view modes: `icnv`, `clmv`, `glyv`
+# Four-letter codes for the view modes: `Nlsv` `icnv`, `clmv`, `glyv`
 defaults write com.apple.Finder FXPreferredViewStyle "clmv"
 
 # When performing a search, search the current folder by default

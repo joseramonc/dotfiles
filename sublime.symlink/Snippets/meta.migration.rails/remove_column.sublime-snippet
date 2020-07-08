@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+remove_column :${1:table_name}, :${2:column_name}
+]]></content>
+    <tabTrigger>rmc</tabTrigger>
+    <scope>meta.migration.rails</scope>
+    <description>Remove column</description>
+</snippet>

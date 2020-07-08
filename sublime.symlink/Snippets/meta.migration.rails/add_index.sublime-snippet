@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+add_index :${1:table_name}, :${2:column_name}${3:, {$4}}
+]]></content>
+    <tabTrigger>ai</tabTrigger>
+    <scope>meta.migration.rails</scope>
+    <description>Add index</description>
+</snippet>

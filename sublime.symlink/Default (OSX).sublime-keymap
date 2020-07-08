@@ -1,6 +1,10 @@
 [
+  // Paste and indent
+	{ "keys": ["super+v"], "command": "paste_and_indent" },
+  { "keys": ["super+shift+v"], "command": "paste" },
+
   // Open find file
-	{ "keys": ["super+j"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+  { "keys": ["super+j"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
 
   // Join lines
   { "keys": ["shift+super+j"], "command": "join_lines" },
@@ -9,17 +13,44 @@
 	{ "keys": ["shift+tab"], "command": "unindent" },
 
   // Reveal in sidebar
-	{ "keys": ["super+i"], "command": "reveal_in_side_bar"},
+  { "keys": ["super+i"], "command": "run_multiple_commands",
+    "args": {
+      "commands": [
+        { "command": "reveal_in_side_bar", "context": "window" },
+        { "command": "focus_side_bar", "context": "window" },
+      ]
+    }
+  },
 
   // Create a new file aware of current directory
-  { "keys": ["super+i", "a"], "command": "new_file" },
+  { "keys": ["super+i", "a"], "command": "run_multiple_commands",
+    "args": {
+      "commands": [
+        { "command": "new_file", "context": "window" },
+        { "command": "save", "context": "window" },
+      ]
+    }
+  },
 
-  // Reveal file in finder
+	{ "keys": ["super+i", "super+a"], "command": "run_multiple_commands",
+    "args": {
+      "commands": [
+        { "command": "new_file", "context": "window" },
+        { "command": "save", "context": "window" },
+      ]
+    }
+  },
+
+  // Open file in finder
   { "keys": ["super+i", "o"], "command": "open_dir", "args": { "dir": "$file_path", "file": "$file_name"} },
   { "keys": ["super+i", "super+o"], "command": "open_dir", "args": { "dir": "$file_path", "file": "$file_name"} },
 
-  // TODO: Rename file
-  // { "keys": ["super+i", "m"], "command": "rename_path", "args": { "paths": ["$file_name"]} },
+  // Rename file
+  { "keys": ["super+i", "m"], "command": "rename_file" },
+  { "keys": ["super+i", "super+m"], "command": "rename_file" },
+
+  // Delete file
+  { "keys": ["super+i", "backspace"], "command": "delete_active_file" },
 
   // Copy file path
   { "keys": ["super+i", "c"], "command": "copy_path" },
@@ -53,16 +84,30 @@
   { "keys": ["ctrl+d"], "command": "expand_selection", "args": {"to": "brackets"} },
 
   // Panes
-  { "keys": ["super+k", "super+up"], "command": "new_pane" },
-  { "keys": ["super+k", "super+right"], "command": "new_pane" },
-  { "keys": ["super+k", "super+left"], "command": "new_pane" },
-  { "keys": ["super+k", "super+down"], "command": "close_pane" },
-
-  { "keys": ["alt+up"], "command": "power_cursor_add" },
-  { "keys": ["alt+down"], "command": "power_cursor_add" },
-  { "keys": ["alt+/"], "command": "power_cursor_activate" },
-  { "keys": ["alt+."], "command": "power_cursor_activate" },
-  // { "keys": ["alt+right"], "command": "power_cursor_activate" },
+  { "keys": ["super+k", "super+up"], "command": "run_multiple_commands", "args": {
+      "commands": [
+        { "command": "new_pane", "context": "window" },
+      ]
+    }
+  },
+  { "keys": ["super+k", "super+right"], "command": "run_multiple_commands", "args": {
+      "commands": [
+        { "command": "new_pane", "context": "window" },
+      ]
+    }
+  },
+  { "keys": ["super+k", "super+left"], "command": "run_multiple_commands", "args": {
+      "commands": [
+        { "command": "new_pane", "context": "window" },
+      ]
+    }
+  },
+  { "keys": ["super+k", "super+down"], "command": "run_multiple_commands", "args": {
+      "commands": [
+        { "command": "new_pane", "context": "window" },
+      ]
+    }
+  },
 
   // Switch erb tags
   { "keys": ["super+shift+."], "command": "erb", "context":
@@ -79,32 +124,27 @@
   // Goto line
   { "keys": ["super+m"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
 
-  // Auto copy-paste when using search panes
-  { 
-    "keys": ["super+f"], 
-    "command": "run_multiple_commands", 
-    "args": {
-      "commands": [
-        {"command": "copy", "args": null, "context": "window" },
-        {"command": "show_panel", "args": {"panel": "find", "reverse": false}, "context": "window" },
-        {"command": "select_all", "args": null, "context": "window" },
-        {"command": "paste", "args": null, "context": "window" },
-        {"command": "select_all", "args": null, "context": "window" },
+  { "keys": ["alt+enter"], "command": "replace_all",
+     "context": [{"key": "panel", "operand": "find_in_files"}, {"key": "panel_has_focus"}]
+  },
 
-      ]
-    }
-  },
-  { 
-    "keys": ["super+shift+f"], 
-    "command": "run_multiple_commands", 
-    "args": {
-      "commands": [
-        {"command": "copy", "args": null, "context": "window" },
-        {"command": "show_panel", "args": {"panel": "find_in_files"}, "context": "window" },
-        {"command": "select_all", "args": null, "context": "window" },
-        {"command": "paste", "args": null, "context": "window" },
-        {"command": "select_all", "args": null, "context": "window" },
-      ]
-    }
-  },
+  // Multi cursor!
+  { "keys": ["alt+up"], "command": "select_lines", "args": {"forward": false} },
+  { "keys": ["alt+down"], "command": "select_lines", "args": {"forward": true} },
+
+  // Toggle quotes
+  { "keys": ["shift+super+'"], "command": "toggle_quotes" },
+
+  // Close other tabs
+  { "keys": ["super+alt+w"], "command": "close_other_tabs" },
+
+  // Dont change tab when doing this. Usually is a mistake
+  { "keys": ["ctrl+tab"], "command": "noop" },
+
+  // Escape of selection
+  { "keys": ["escape"], "command": "move", "args": {"by": "characters", "forward": false},
+    "context": [
+      { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+    ]
+  }
 ]

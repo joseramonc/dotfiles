@@ -1,6 +1,8 @@
 {
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/Solarized Color Scheme/Solarized (dark).sublime-color-scheme",
+	"copy_with_empty_selection": false,
+	"drag_text": false,
 	"ensure_newline_at_eof_on_save": true,
 	"extra_file_exclude_patterns":
 	[
@@ -32,15 +34,18 @@
 		".git",
 		".hg",
 		"CVS",
+		"log",
 		"node_modules",
 		"tmp"
 	],
+	"find_selected_text": true,
 	"folder_exclude_patterns":
 	[
 		".svn",
 		".git",
 		".hg",
 		"CVS",
+		"log",
 		"node_modules",
 		"tmp"
 	],
@@ -54,9 +59,11 @@
 	[
 		80
 	],
+	"show_definitions": false,
 	"scroll_speed": 0,
 	"tab_size": 2,
 	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
 	"word_wrap": "false"
 }

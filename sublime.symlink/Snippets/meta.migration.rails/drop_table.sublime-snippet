@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+drop_table :${1:table_name}
+]]></content>
+    <tabTrigger>dt</tabTrigger>
+    <scope>meta.migration.rails</scope>
+    <description>Drop table</description>
+</snippet>

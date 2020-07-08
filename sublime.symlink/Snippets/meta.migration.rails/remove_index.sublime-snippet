@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+remove_index :${1:table_name}, column: ${2::column_name}
+]]></content>
+    <tabTrigger>rmi</tabTrigger>
+    <scope>meta.migration.rails</scope>
+    <description>Remove index</description>
+</snippet>

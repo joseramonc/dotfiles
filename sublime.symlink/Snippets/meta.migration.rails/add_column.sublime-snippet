@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+add_column :${1:table_name}, :${2:column_name}, :${3:type}
+]]></content>
+    <tabTrigger>ac</tabTrigger>
+    <scope>meta.migration.rails</scope>
+    <description>Add column</description>
+</snippet>

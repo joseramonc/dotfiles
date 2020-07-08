@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+rename_table :${1:old_table_name}, :${2:new_table_name}
+]]></content>
+    <tabTrigger>rt</tabTrigger>
+    <scope>meta.migration.rails</scope>
+    <description>Rename table</description>
+</snippet>

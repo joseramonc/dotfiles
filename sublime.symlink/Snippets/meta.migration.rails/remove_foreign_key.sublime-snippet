@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+remove_foreign_key :${1:from_table}, column: :${2:model_id}
+]]></content>
+    <tabTrigger>rmfk</tabTrigger>
+    <scope>meta.migration.rails</scope>
+    <description>Remove foreign key</description>
+</snippet>

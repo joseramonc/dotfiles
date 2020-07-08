@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+change_column_null :${1:table_name}, :${2:column_name}, ${3:true}
+]]></content>
+    <tabTrigger>cn</tabTrigger>
+    <scope>meta.migration.rails</scope>
+    <description>Change column null</description>
+</snippet>

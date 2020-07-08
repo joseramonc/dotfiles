@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+change_column_default :${1:table_name}, :${2:column_name}, ${3:'new_default'}
+]]></content>
+    <tabTrigger>cd</tabTrigger>
+    <scope>meta.migration.rails</scope>
+    <description>Change column default</description>
+</snippet>

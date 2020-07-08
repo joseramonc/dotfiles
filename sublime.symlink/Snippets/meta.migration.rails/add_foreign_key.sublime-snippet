@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+add_foreign_key :${1:from_table}, :${2:to_table}${3:, options = {}}
+]]></content>
+    <tabTrigger>afk</tabTrigger>
+    <scope>meta.migration.rails</scope>
+    <description>Add foreign key</description>
+</snippet>

@@ -13,6 +13,10 @@ sublime.symlink/*
 !sublime.symlink/snippets/
 !sublime.symlink/Solarized (dark).sublime-color-scheme
 !sublime.symlink/run_multiple_commands_command.py
+!sublime.symlink/close_other_tabs_command.py
+!sublime.symlink/delete_active_file_command.py
+!sublime.symlink/erb_command.py
+!sublime.symlink/toggle_quotes_command.py
 !sublime.symlink/Preferences.sublime-settings
 !sublime.symlink/Ruby on Rails.sublime-settings
 !sublime.symlink/Default (OSX).sublime-keymap
