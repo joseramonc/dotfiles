@@ -1,9 +1,3 @@
-atom.symlink/*
-!atom.symlink/atom.coffee
-!atom.symlink/config.cson
-!atom.symlink/init.coffee
-!atom.symlink/keymap.cson
-
 git/gitconfig.symlink
 
 .DS_Store
@@ -17,6 +11,7 @@ sublime.symlink/*
 !sublime.symlink/delete_active_file_command.py
 !sublime.symlink/erb_command.py
 !sublime.symlink/toggle_quotes_command.py
+!sublime.symlink/rails_open_view_command.py
 !sublime.symlink/Preferences.sublime-settings
 !sublime.symlink/Ruby on Rails.sublime-settings
 !sublime.symlink/Default (OSX).sublime-keymap
