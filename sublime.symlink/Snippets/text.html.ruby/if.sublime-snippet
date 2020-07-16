@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+${TM_RAILS_TEMPLATE_START_RUBY_INLINE}if ${1:condition}${TM_RAILS_TEMPLATE_END_RUBY_EXPR}
+  ${0:<!-- code -->}
+${TM_RAILS_TEMPLATE_END_RUBY_BLOCK}
+]]></content>
+    <tabTrigger>if</tabTrigger>
+    <scope>text.html.ruby, text.haml</scope>
+    <description>if statement</description>
+</snippet>

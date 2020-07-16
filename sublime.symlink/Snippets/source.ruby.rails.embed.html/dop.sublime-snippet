@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+do |${1:object}|${TM_RAILS_TEMPLATE_END_RUBY_EXPR}
+  $1$0
+${TM_RAILS_TEMPLATE_START_RUBY_INLINE}end
+]]></content>
+    <tabTrigger>dop</tabTrigger>
+    <scope>source.ruby.rails.embedded.html</scope>
+    <description>Do parameters</description>
+</snippet>

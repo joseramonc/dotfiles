@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+${TM_RAILS_TEMPLATE_START_RUBY_EXPR}current_user${TM_RAILS_TEMPLATE_END_RUBY_EXPR}
+]]></content>
+    <tabTrigger>cur</tabTrigger>
+    <scope>text.html.ruby, text.haml</scope>
+    <description>current_user</description>
+</snippet>

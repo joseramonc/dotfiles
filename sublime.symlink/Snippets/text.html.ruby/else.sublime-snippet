@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+${TM_RAILS_TEMPLATE_START_RUBY_INLINE}else${TM_RAILS_TEMPLATE_END_RUBY_EXPR}
+  $0
+]]></content>
+    <tabTrigger>else</tabTrigger>
+    <scope>text.html.ruby, text.haml</scope>
+    <description>else</description>
+</snippet>

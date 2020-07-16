@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+it "${1:is true}" do
+  ${0:# code}
+end]]></content>
+    <tabTrigger>it</tabTrigger>
+    <scope>source.ruby.rails</scope>
+    <description>it</description>
+</snippet>

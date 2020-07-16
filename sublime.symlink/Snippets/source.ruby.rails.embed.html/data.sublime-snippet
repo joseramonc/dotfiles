@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+data: { ${1:key}: ${2:value} }
+]]></content>
+    <tabTrigger>data</tabTrigger>
+    <scope>source.ruby.rails.embedded.html</scope>
+    <description>data</description>
+</snippet>

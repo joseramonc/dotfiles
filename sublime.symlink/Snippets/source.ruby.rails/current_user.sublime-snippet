@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+current_user
+]]></content>
+    <tabTrigger>cur</tabTrigger>
+    <scope>source.ruby.rails</scope>
+    <description>current_user</description>
+</snippet>
