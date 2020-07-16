@@ -1,4 +1,5 @@
 {
+	"auto_complete_delay": 150,
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/Solarized Color Scheme/Solarized (dark).sublime-color-scheme",
 	"copy_with_empty_selection": false,
@@ -51,19 +52,21 @@
 	],
 	"font_face": "Hasklig",
 	"font_size": 15,
+	"git_diff_target": "head",
 	"ignored_packages":
 	[
 		"Vintage"
 	],
+	"mini_diff": "auto",
 	"rulers":
 	[
 		80
 	],
-	"show_definitions": false,
 	"scroll_speed": 0,
+	"show_definitions": false,
 	"tab_size": 2,
 	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"word_wrap": "false"
+	"word_wrap": false
 }

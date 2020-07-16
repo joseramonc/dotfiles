@@ -145,6 +145,116 @@
   { "keys": ["escape"], "command": "move", "args": {"by": "characters", "forward": false},
     "context": [
       { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+      { "key": "panel_has_focus", "operator": "equal", "operand": false }
     ]
-  }
+  },
+
+  // Git blame.
+  { "keys": ["alt+o"], "command": "gitlink", "args" : {"line" : true, "web"  : true } },
+
+  // Open views from controller, and partial from views
+  { "keys": ["super+shift+i"], "command": "rails_open_view" },
+  { "keys": ["super+shift+o"], "command": "rails_open_view" },
+
+  // Emmet keybindings
+  {
+    "keys": ["ctrl+d"],
+    "command": "run_emmet_action",
+    "args": { "action": "balance_outward" },
+    "context": { "key": "selector", "operator": "equal", "operand": "(text.html, text.xml) - string - comment", "match_all": true },
+  },
+  {
+    "keys": ["alt+d"],
+    "command": "run_emmet_action",
+    "args": { "action": "balance_inward" },
+    "context": { "key": "selector", "operator": "equal", "operand": "(text.html, text.xml) - string - comment", "match_all": true },
+  },
+  {
+    "keys": ["super+e"],
+    "command": "expand_abbreviation_by_tab",
+    "context": [
+      {
+        "operand": "source.css, source.sass, source.less, source.scss, source.stylus, source.postcss, source.jade, text.jade, source.pug, text.pug, text.slim, text.xml, text.html - source, text.haml, text.scala.html, source string",
+        "operator": "equal",
+        "match_all": true,
+        "key": "selector"
+      },
+      {
+        "operand": "storage.type.templatetag.django",
+        "operator": "not_equal",
+        "match_all": true,
+        "key": "selector"
+      },
+      {
+        "match_all": true,
+        "key": "selection_empty"
+      },
+      {
+        "operator": "equal",
+        "operand": false,
+        "match_all": true,
+        "key": "has_next_field"
+      },
+      {
+        "operator": "equal",
+        "operand": false,
+        "match_all": true,
+        "key": "setting.disable_tab_abbreviations"
+      },
+      {
+        "operand": false,
+        "operator": "equal",
+        "match_all": true,
+        "key": "auto_complete_visible"
+      },
+      {
+        "match_all": true,
+        "key": "is_abbreviation"
+      }
+    ]
+  },
+  {
+    "keys": ["super+e"],
+    "command": "expand_abbreviation_by_tab",
+    "context": [
+      {
+        "operand": "source.css, source.sass, source.less, source.scss, source.stylus, source.postcss, source.jade, text.jade, source.pug, text.pug, text.slim, text.xml, text.html - source, text.haml, text.scala.html, source string",
+        "operator": "equal",
+        "match_all": true,
+        "key": "selector"
+      },
+      {
+        "operand": "storage.type.templatetag.django",
+        "operator": "not_equal",
+        "match_all": true,
+        "key": "selector"
+      },
+      {
+        "match_all": true,
+        "key": "selection_empty"
+      },
+      {
+        "operator": "equal",
+        "operand": false,
+        "match_all": true,
+        "key": "hamls_next_field"
+      },
+      {
+        "operator": "equal",
+        "operand": true,
+        "match_all": true,
+        "key": "auto_complete_visible"
+      },
+      {
+        "operator": "equal",
+        "operand": false,
+        "match_all": true,
+        "key": "setting.disable_tab_abbreviations_on_auto_complete"
+      },
+      {
+        "match_all": true,
+        "key": "is_abbreviation"
+      }
+    ]
+  },
 ]
