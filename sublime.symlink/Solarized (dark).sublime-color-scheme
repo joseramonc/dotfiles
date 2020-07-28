@@ -696,5 +696,105 @@
             "scope": "entity.name.function.js",
             "foreground": "var(base0)"
         },
+        {
+            "name": "SCSS import",
+            "scope": "source.scss meta.at-rule.import.scss variable.parameter.url.scss",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "SCSS import",
+            "scope": "source.scss meta.at-rule.import.scss",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "CSS definition",
+            "scope": "entity.other.attribute-name.id.css",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "CSS definition",
+            "scope": "entity.other.attribute-name.class.css",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "CSS properties",
+            "scope": "support.type.property-name.css, support.type.property-name.scss",
+            "foreground": "var(yellow)"
+        },
+        {
+            "name": "CSS constant numeric",
+            "scope": "constant.numeric.css, support.constant.numeric.css, constant.numeric.scss, support.constant.numeric.scss",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "CSS constant property value",
+            "scope": "meta.property-value.css, support.constant.property-value.css, meta.property-value.scss, support.constant.property-value.scss",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "CSS >",
+            "scope": "punctuation.separator.combinator.css",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "CSS entity",
+            "scope": "entity.name.tag.css, entity.name.tag.scss",
+            "foreground": "var(green)"
+        },
+        {
+            "name": "CSS units",
+            "scope": "keyword.other.unit.css, keyword.other.unit.scss",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "CSS termination",
+            "scope": "punctuation.terminator.rule.css, punctuation.terminator.rule.scss",
+            "foreground": "var(base0)"
+        },
+        {
+            "name": "SCSS support function",
+            "scope": "support.function.misc.scss, support.function.misc.scss",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "SCSS support function",
+            "scope": "punctuation.section.function.scss",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "SCSS rgb value",
+            "scope": "constant.other.color.rgb-value.scss",
+            "foreground": "var(cyan)"
+        },
+        {
+            "name": "CSS source",
+            "scope": "source.css, source.scss",
+            "foreground": "var(red)"
+        },
+        {
+            "name": "CSS :",
+            "scope": "punctuation.separator.key-value.css, punctuation.separator.key-value.scss",
+            "foreground": "var(base0)"
+        },
+        {
+            "name": "CSS property list",
+            "scope": "punctuation.section.property-list.begin.css, punctuation.section.property-list.begin.scss, punctuation.section.property-list.end.css, punctuation.section.property-list.end.scss",
+            "foreground": "var(blue)"
+        },
+        {
+            "name": "YML Number",
+            "scope": "constant.numeric.integer.yaml",
+            "foreground": "var(magenta)"
+        },
+        {
+            "name": "YML source",
+            "scope": "string.unquoted.plain.out.yaml",
+            "foreground": "var(base0)"
+        },
+        {
+            "name": "YML :",
+            "scope": "punctuation.separator.key-value.mapping.yaml",
+            "foreground": "var(red)"
+        },
     ]
 }

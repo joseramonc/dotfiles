@@ -52,7 +52,7 @@
 	],
 	"font_face": "Hasklig",
 	"font_size": 15,
-	"git_diff_target": "head",
+	"git_diff_target": "index",
 	"ignored_packages":
 	[
 		"Vintage"

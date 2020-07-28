@@ -12,6 +12,9 @@
   // Unindent
 	{ "keys": ["shift+tab"], "command": "unindent" },
 
+  //
+  // Super + i are to act through current file, mostly.
+  //
   // Reveal in sidebar
   { "keys": ["super+i"], "command": "run_multiple_commands",
     "args": {
@@ -51,6 +54,10 @@
 
   // Delete file
   { "keys": ["super+i", "backspace"], "command": "delete_active_file" },
+
+  // Open in github
+  { "keys": ["super+i","super+b"], "command": "gitlink", "args" : {"line" : true, "web"  : true } },
+  { "keys": ["super+i","b"], "command": "gitlink", "args" : {"line" : true, "web"  : true } },
 
   // Copy file path
   { "keys": ["super+i", "c"], "command": "copy_path" },
@@ -151,6 +158,7 @@
 
   // Git blame.
   { "keys": ["alt+o"], "command": "gitlink", "args" : {"line" : true, "web"  : true } },
+  { "keys": ["super+shift+b"], "command": "gitlink", "args" : {"line" : true, "web"  : true } },
 
   // Open views from controller, and partial from views
   { "keys": ["super+shift+i"], "command": "rails_open_view" },

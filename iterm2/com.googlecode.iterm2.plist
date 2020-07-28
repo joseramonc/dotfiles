@@ -657,6 +657,11 @@ Select Next Tab</string>
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSUserKeyEquivalents</key>
+	<dict>
+		<key>Show All</key>
+		<string>@p</string>
+	</dict>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>219 230 841 470 0 0 1280 777 </string>
 	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
@@ -670,7 +675,7 @@ Select Next Tab</string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 193 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>53 48 1221 658 0 0 1280 777 </string>
+	<string>98 33 1148 714 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -3185,6 +3190,7 @@ Select Next Tab</string>
 	<array>
 		<string>3.3.6</string>
 		<string>3.3.8</string>
+		<string>3.3.11</string>
 		<string>3.3.1</string>
 		<string>3.3.7</string>
 		<string>3.3.9</string>
@@ -3222,7 +3228,7 @@ Select Next Tab</string>
 	<key>NoSyncInstallationId</key>
 	<string>F4744326-D2C9-4A4B-B180-E2949A0F8A88</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>34</integer>
+	<integer>40</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -4041,11 +4047,11 @@ Select Next Tab</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-06-08T17:41:38Z</date>
+	<date>2020-07-17T15:10:17Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
-	<false/>
+	<true/>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -4053,7 +4059,7 @@ Select Next Tab</string>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
@@ -4105,7 +4111,7 @@ Select Next Tab</string>
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.3.9</string>
+	<string>3.3.11</string>
 	<key>kCPFavoritesUserDefaultsKey</key>
 	<array>
 		<data>
