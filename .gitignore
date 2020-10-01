@@ -7,6 +7,7 @@ sublime.symlink/*
 !sublime.symlink/snippets/
 !sublime.symlink/Solarized (dark).sublime-color-scheme
 !sublime.symlink/run_multiple_commands_command.py
+!sublime.symlink/duplicate_lines_command.py
 !sublime.symlink/close_other_tabs_command.py
 !sublime.symlink/delete_active_file_command.py
 !sublime.symlink/erb_command.py
