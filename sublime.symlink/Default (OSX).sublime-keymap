@@ -56,8 +56,11 @@
   { "keys": ["super+i", "backspace"], "command": "delete_active_file" },
 
   // Open in github
-  { "keys": ["super+i","super+b"], "command": "gitlink", "args" : {"line" : true, "web"  : true } },
-  { "keys": ["super+i","b"], "command": "gitlink", "args" : {"line" : true, "web"  : true } },
+  { "keys": ["super+i", "g"], "command": "gitlink", "args": {"line": true, "web": true } },
+  { "keys": ["super+i", "super+g"], "command": "gitlink", "args": {"line": true, "web": true } },
+  // Blame in github
+  { "keys": ["super+i","super+b"], "command": "gitlink", "args": {"line": true, "web": true, "blame": true } },
+  { "keys": ["super+i","b"], "command": "gitlink", "args": {"line": true, "web": true, "blame": true } },
 
   // Copy file path
   { "keys": ["super+i", "c"], "command": "copy_path" },
@@ -156,10 +159,6 @@
     ]
   },
 
-  // Git blame.
-  { "keys": ["alt+o"], "command": "gitlink", "args" : {"line" : true, "web"  : true } },
-  { "keys": ["super+shift+b"], "command": "gitlink", "args" : {"line" : true, "web"  : true } },
-
   // Open views from controller, and partial from views
   { "keys": ["super+shift+i"], "command": "rails_open_view" },
   { "keys": ["super+shift+o"], "command": "rails_open_view" },
@@ -167,19 +166,19 @@
   // Emmet keybindings
   {
     "keys": ["ctrl+d"],
-    "command": "run_emmet_action",
-    "args": { "action": "balance_outward" },
+    "command": "emmet_balance",
+    "args": { "direction": "outward" },
     "context": { "key": "selector", "operator": "equal", "operand": "(text.html, text.xml) - string - comment", "match_all": true },
   },
   {
     "keys": ["alt+d"],
-    "command": "run_emmet_action",
-    "args": { "action": "balance_inward" },
+    "command": "emmet_balance",
+    "args": { "direction": "inward" },
     "context": { "key": "selector", "operator": "equal", "operand": "(text.html, text.xml) - string - comment", "match_all": true },
   },
   {
     "keys": ["super+e"],
-    "command": "expand_abbreviation_by_tab",
+    "command": "emmet_expand_abbreviation",
     "context": [
       {
         "operand": "source.css, source.sass, source.less, source.scss, source.stylus, source.postcss, source.jade, text.jade, source.pug, text.pug, text.slim, text.xml, text.html - source, text.haml, text.scala.html, source string",
@@ -215,15 +214,11 @@
         "match_all": true,
         "key": "auto_complete_visible"
       },
-      {
-        "match_all": true,
-        "key": "is_abbreviation"
-      }
     ]
   },
   {
     "keys": ["super+e"],
-    "command": "expand_abbreviation_by_tab",
+    "command": "emmet_expand_abbreviation",
     "context": [
       {
         "operand": "source.css, source.sass, source.less, source.scss, source.stylus, source.postcss, source.jade, text.jade, source.pug, text.pug, text.slim, text.xml, text.html - source, text.haml, text.scala.html, source string",
@@ -258,10 +253,6 @@
         "operand": false,
         "match_all": true,
         "key": "setting.disable_tab_abbreviations_on_auto_complete"
-      },
-      {
-        "match_all": true,
-        "key": "is_abbreviation"
       }
     ]
   },

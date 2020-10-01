@@ -3,7 +3,7 @@ import os
 
 class DeleteActiveFileCommand(sublime_plugin.TextCommand):
     def run(self, edit):
-        confirmed = sublime.ok_cancel_dialog('Are you sure you want to delete the file?')
+        confirmed = sublime.ok_cancel_dialog('Are you sure you want to delete ' + self.view.file_name() + '?' )
         if not confirmed:
             return
         os.remove(self.view.file_name())

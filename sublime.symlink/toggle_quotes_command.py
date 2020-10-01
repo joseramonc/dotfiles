@@ -10,6 +10,12 @@ quoteList = ['\'', '"']
 class ToggleQuotesCommand(sublime_plugin.TextCommand):
     def run(self, edit, **kwargs):
         v = self.view
+
+        # Store initial selections, to be restored later
+        initial_selections = []
+        for sel in v.sel():
+            initial_selections.append(Region(sel.begin(), sel.end()))
+
         if v.sel()[0].size() == 0:
             v.run_command('expand_selection', {'to': 'scope'})
 
@@ -36,6 +42,10 @@ class ToggleQuotesCommand(sublime_plugin.TextCommand):
             text = newQuotes + text + newQuotes
             v.replace(edit, sel, text)
 
+        # Restore initial selections
+        v.sel().clear()
+        for reg in initial_selections:
+            v.sel().add(reg)
 
 # 'te\'st'
 # 'te"st'

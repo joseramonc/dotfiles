@@ -15,3 +15,4 @@ sublime.symlink/*
 !sublime.symlink/Preferences.sublime-settings
 !sublime.symlink/Ruby on Rails.sublime-settings
 !sublime.symlink/Default (OSX).sublime-keymap
+!sublime.symlink/Emmet.sublime-settings

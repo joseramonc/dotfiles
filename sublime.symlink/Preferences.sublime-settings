@@ -37,6 +37,7 @@
 		"CVS",
 		"log",
 		"node_modules",
+		"coverage",
 		"tmp"
 	],
 	"find_selected_text": true,
@@ -48,6 +49,7 @@
 		"CVS",
 		"log",
 		"node_modules",
+		"coverage",
 		"tmp"
 	],
 	"font_face": "Hasklig",
@@ -55,6 +57,21 @@
 	"git_diff_target": "index",
 	"ignored_packages":
 	[
+		"ASP",
+		"C#",
+		"C++",
+		"D",
+		"Erlang",
+		"Go",
+		"LaTeX",
+		"Lisp",
+		"Lua",
+		"Matlab",
+		"Objective-C",
+		"Perl",
+		"PHP",
+		"R",
+		"Scala",
 		"Vintage"
 	],
 	"mini_diff": "auto",
