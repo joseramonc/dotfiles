@@ -1,3 +1,4 @@
+# https://github.com/wjthomas9/duplicate-lines
 import sublime, sublime_plugin
 from sublime import Region
 

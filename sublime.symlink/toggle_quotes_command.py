@@ -18,6 +18,10 @@ class ToggleQuotesCommand(sublime_plugin.TextCommand):
 
         if v.sel()[0].size() == 0:
             v.run_command('expand_selection', {'to': 'scope'})
+        else:
+            # TODO: Testing this else. This will expand first and last quote if selected after the first one, but before the last one:
+            # "hi", 'there', "hello"
+            v.run_command('expand_selection', {'to': 'scope'})
 
         for sel in v.sel():
             text = v.substr(sel)

@@ -56,13 +56,23 @@ class RailsOpenViewCommand(sublime_plugin.WindowCommand):
         controller_name = base[-1].split("/")[0]
         view_file_path = controller_name + "/_" + partial_argument
 
+    else: # Case cannot be handled
+      print("Nor a controller nor a view. Skipped.")
+      return
+
     file_name_sans_extension = base_path + "views/" + view_file_path
+    found = False
     for ext in self.extensions:
       file_path = file_name_sans_extension + ext
       if os.path.exists(file_path):
+        found = True
         break
 
-    self.window.open_file(file_path)
+    if found:
+      self.window.open_file(file_path)
+    else:
+      # TODO: Guess the better file extensions for the new file
+      self.window.open_file(file_name_sans_extension + self.extensions[0])
 
 
   def run(self):

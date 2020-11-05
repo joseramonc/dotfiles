@@ -67,6 +67,11 @@
   { "keys": ["super+i", "super+c"], "command": "copy_path" },
   { "keys": ["super+o"], "command": "copy_path" },
 
+
+  // Duplicate line
+  { "keys": ["super+shift+d"], "command": "duplicate_lines" },
+  { "keys": ["super+shift+u"], "command": "duplicate_lines", "args": { "up": true } },
+
   // Show sidebar
 	{ "keys": ["super+\\"], "command": "toggle_side_bar" },
 

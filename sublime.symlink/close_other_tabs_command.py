@@ -1,12 +1,7 @@
 import sublime, sublime_plugin
 
-class CloseOtherTabsCommand(sublime_plugin.WindowCommand):
-    def run(self):
-        window = self.window
-        active_group = window.active_group()
-        curr_view_id = window.active_view_in_group(active_group).id()
-
-        for v in window.views_in_group(active_group):
-            if v.id() == curr_view_id: continue
-                window.focus_view(v)
-                window.run_command("close")
+class CloseOtherTabsCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        window = self.view.window()
+        group_index, view_index = window.get_view_index(self.view)
+        window.run_command("close_others_by_index", { "group": group_index, "index": view_index})
