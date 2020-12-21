@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 tap do |${1:base}|
-  ${1:# code}$0
+  ${1:base}$0
 end]]></content>
     <tabTrigger>tap</tabTrigger>
     <scope>source.ruby.rails</scope>
