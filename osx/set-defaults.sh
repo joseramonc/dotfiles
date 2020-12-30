@@ -61,7 +61,6 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Set a really fast key repeat.
 defaults write NSGlobalDomain KeyRepeat -int 2
-defaults write NSGlobalDomain "InitialKeyRepeat_Level_Saved" -int 4
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 # Disable auto-correct

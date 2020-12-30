@@ -1,7 +1,7 @@
 {
 	"auto_complete_delay": 150,
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/Solarized Color Scheme/Solarized (dark).sublime-color-scheme",
+	"color_scheme": "Solarized (dark).sublime-color-scheme",
 	"copy_with_empty_selection": false,
 	"drag_text": false,
 	"ensure_newline_at_eof_on_save": true,

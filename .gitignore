@@ -5,6 +5,7 @@ git/gitconfig.symlink
 
 sublime.symlink/*
 !sublime.symlink/snippets/
+!sublime.symlink/Readme.md
 !sublime.symlink/Solarized (dark).sublime-color-scheme
 !sublime.symlink/run_multiple_commands_command.py
 !sublime.symlink/duplicate_lines_command.py

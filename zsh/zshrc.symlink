@@ -46,7 +46,8 @@ eval "$(rbenv init -)"
 compdef _c c
 
 export HOMEBREW_SOCKET_DIR=/usr/local/var/www
-export HOMEBREW_LOG_DIR=/usr/local/var/log/nginx
+
+export GPG_TTY=$(tty)
 
 source ~/.iterm2_shell_integration.zsh
 
